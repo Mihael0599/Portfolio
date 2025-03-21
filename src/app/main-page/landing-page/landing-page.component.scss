@@ -1,0 +1,130 @@
+.main-contet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.title {
+    >h2 {
+        font-family: Fira Code;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #D9D9D9;
+    }
+}
+
+.name {
+    >h1 {
+        font-family: Karla;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: 100%;
+        letter-spacing: -2%;
+        color: #D9D9D9;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding-top: 40px;
+
+    >div {
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 172px;
+        border-radius: 100px;
+
+        >a {
+            font-size: 20px;
+        }
+    }
+}
+
+.slide-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    transform: rotate(-3deg);
+    backdrop-filter: blur(5.300000190734863px);
+    background-color: #FFFFFF1F;
+    z-index: 1000;
+
+    >ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 50px;
+        animation: scrollText 10s linear infinite;
+
+        >li {
+            font-size: 32px;
+            font-weight: bold;
+            color: #3DCFB6;
+        }
+    }
+}
+
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.line-left-container{
+    position: fixed;
+    bottom: 20px;
+    left: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.line-left{
+    border-left: 1px solid #3DCFB6;
+    height: 240px;
+}
+
+.line-right-container{
+    position: fixed;
+    bottom: 20px;
+    right: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.line-right{
+    border-left: 1px solid #3DCFB6;
+    height: 186px;
+}
+
+.email{
+    transform: rotate(90deg);
+    color: white;
+    font-size: 16px;
+}
