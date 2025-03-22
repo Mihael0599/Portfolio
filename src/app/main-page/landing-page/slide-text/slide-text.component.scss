@@ -1,0 +1,39 @@
+.slide-text {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(-3deg);
+    backdrop-filter: blur(5.300000190734863px);
+    background-color: #FFFFFF1F;
+    z-index: 1000;
+
+    >ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 50px;
+        animation: scrollText 10s linear infinite;
+
+        >li {
+            font-size: 32px;
+            font-weight: bold;
+            color: #3DCFB6;
+        }
+    }
+}
+
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

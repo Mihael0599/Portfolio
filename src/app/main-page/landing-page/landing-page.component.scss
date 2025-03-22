@@ -8,6 +8,12 @@
     max-width: 1920px;
 }
 
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
 .title {
     >h2 {
         font-family: Fira Code;
@@ -52,47 +58,9 @@
     }
 }
 
-.slide-text {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    transform: rotate(-3deg);
-    backdrop-filter: blur(5.300000190734863px);
-    background-color: #FFFFFF1F;
-    z-index: 1000;
 
-    >ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        gap: 50px;
-        animation: scrollText 10s linear infinite;
-
-        >li {
-            font-size: 32px;
-            font-weight: bold;
-            color: #3DCFB6;
-        }
-    }
-}
-
-
-@keyframes scrollText {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.line-left-container{
-    position: fixed;
+.line-left-container {
+    position: absolute;
     bottom: 20px;
     left: 96px;
     display: flex;
@@ -102,13 +70,13 @@
     gap: 24px;
 }
 
-.line-left{
+.line-left {
     border-left: 1px solid #3DCFB6;
     height: 240px;
 }
 
-.line-right-container{
-    position: fixed;
+.line-right-container {
+    position: absolute;
     bottom: 20px;
     right: 96px;
     display: flex;
@@ -118,13 +86,51 @@
     gap: 24px;
 }
 
-.line-right{
+.line-right {
     border-left: 1px solid #3DCFB6;
     height: 186px;
 }
 
-.email{
-    transform: rotate(90deg);
+.email {
+    transform: rotate(-90deg);
     color: white;
-    font-size: 16px;
+    font-size: 22px;
+    position: relative;
+    bottom: 100px;
+}
+
+.slide-text {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.social-media {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.arrow-down {
+    width: 30px;
+    height: 48px;
+    border:  1px solid #3DCFB6;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.bounce-button {
+    animation: floatUpDown 2s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        top: 0;
+    }
+
+    50% {
+        top: 10px;
+        
+    }
 }
