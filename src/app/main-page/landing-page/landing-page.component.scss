@@ -3,9 +3,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 140px);
     width: 100%;
     max-width: 1920px;
+    background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
 }
 
 button {
@@ -61,7 +62,7 @@ button {
 
 .line-left-container {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 96px;
     display: flex;
     align-items: center;
@@ -77,7 +78,7 @@ button {
 
 .line-right-container {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     right: 96px;
     display: flex;
     align-items: center;

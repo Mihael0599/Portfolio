@@ -1,0 +1,38 @@
+.content{
+display: flex;
+justify-content: space-around;
+align-items: center;   
+flex-direction: row;
+}
+
+.title{
+    padding-bottom: 20px;
+    >h1{
+        color: #3DCFB6;
+        font-size: 24px;
+    }
+}
+
+.skill-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 520px;
+    background-color: #3DCFB61A;
+    border: 1px solid #3DCFB6;
+    border-radius: 30px;
+    >div{
+        padding-left: 32px;
+        padding-bottom: 32px;
+        padding-right: 32px;
+        }
+}
+
+.skill-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    flex-wrap: wrap;
+}

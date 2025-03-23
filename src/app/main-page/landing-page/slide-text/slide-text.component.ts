@@ -14,7 +14,7 @@ export class SlideTextComponent {
     'Frontend Developer',
     'Open to Work',
     'Available for remote work',
-    'Based in Spaichingen'
+    'Based in Spaichingen',
   ];
 
 }

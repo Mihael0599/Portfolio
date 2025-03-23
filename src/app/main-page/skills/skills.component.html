@@ -1,1 +1,29 @@
-<p>skills works!</p>
+<div class="content">
+    <div>
+        <div class="title">
+            <h1>Technologies</h1>
+        </div>
+        <div class="skill-container">
+            <div>
+                <h1>Skill Set</h1>
+            </div>
+            <div>
+                <h2>A short introduction of your skills. Highlight your experience of using different front-end
+                    technologies and emphasise your openness to learning and adapting to new technologies. Show how
+                    important it is for you to keep up with the rapid changes in web development.</h2>
+            </div>
+            <div>
+                <h2>You need another skill?</h2>
+            </div>
+            <div>
+                <h2>Feel free to contact me. I look forward to expanding on my previous knowledge.</h2>
+            </div>
+            <div>
+                <button>Lest Talk</button>
+            </div>
+        </div>
+    </div>
+    <div class="skill-icons">
+        <app-images-card *ngFor="let img of imageData" [imageSrc]="img.imageSrc" [text]="img.text"></app-images-card>
+    </div>
+</div>
