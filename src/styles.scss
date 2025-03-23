@@ -4,11 +4,22 @@
 
 body {
     background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-    /*     max-width: 1920px;
+}
+
+@mixin dFlex($jc: center, $ai: center){
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; */
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('./assets/Fonts/Fira_Code/static/FiraCode-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('./assets/Fonts/Karla/static/Karla-Regular.ttf');
 }
 
 a {
@@ -26,7 +37,40 @@ h2 {
     font-size: 18px;
 }
 
-h3 {
+h3{
+    color: white;
+    font-size: 24px;
+}
+
+p{
     color: white;
     font-size: 18px;
+    font-family: 'Karla';
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.buttons-container {
+    @include dFlex();
+    gap: 48px;
+    padding-top: 40px;
+
+    >div {
+        border: 1px solid white;
+        @include dFlex();
+        height: 48px;
+        width: 172px;
+        border-radius: 100px;
+
+        >a {
+            font-size: 18px;
+            font-family: 'Karla';
+            font-weight: 400;
+        }
+    }
 }

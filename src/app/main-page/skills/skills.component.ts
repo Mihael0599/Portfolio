@@ -11,16 +11,16 @@ import { NgFor } from '@angular/common';
 })
 export class SkillsComponent {
   imageData = [
-    {imageSrc: 'assets/angular-icon.png', text: 'Angular'},
-    {imageSrc: 'assets/css-icon.png', text: 'CSS'},
-    {imageSrc: 'assets/firebase-icon.png', text: 'Firebase'},
-    {imageSrc: 'assets/git-icon.png', text: 'Git'},
     {imageSrc: 'assets/html-icon.png', text: 'HTML'},
+    {imageSrc: 'assets/css-icon.png', text: 'CSS'},
     {imageSrc: 'assets/javascript-icon.png', text: 'JavaScript'},
     {imageSrc: 'assets/materialdesign-icon.png', text: 'Material Design'},
-    {imageSrc: 'assets/mindset-icon.png', text: 'Growth mindset'},
+    {imageSrc: 'assets/typescript-icon.png', text: 'TypeScript'},
+    {imageSrc: 'assets/angular-icon.png', text: 'Angular'},
+    {imageSrc: 'assets/firebase-icon.png', text: 'Firebase'},
+    {imageSrc: 'assets/git-icon.png', text: 'Git'},
     {imageSrc: 'assets/restapi-icon.png', text: 'Rest-Api'},
     {imageSrc: 'assets/scrum-icon.png', text: 'Scrum'},
-    {imageSrc: 'assets/typescript-icon.png', text: 'TypeScript'},
-  ]
+    {imageSrc: 'assets/mindset-icon.png', text: 'Growth mindset'}
+  ];
 }

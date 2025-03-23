@@ -1,11 +1,14 @@
+@import '../../../../styles.scss'; 
+
 .icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dFlex();
     flex-direction: column;
+    width: 104px;
+    height: 116px;
     >p{
         color: white;
         padding-top: 8px;
         font-size: 18px;
+        text-align: center;
     }
 }

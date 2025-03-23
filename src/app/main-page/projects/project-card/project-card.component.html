@@ -1,0 +1,9 @@
+<div *ngFor="let project of projectData" class="projects">
+    <h3>{{ project.projectName }}</h3>
+    <p class="project-skills">
+      <ng-container *ngFor="let tech of project.text; let i = index">
+        <span *ngIf="i > 0" class="pipe">|</span>
+        <span>{{ project.text }}</span>
+      </ng-container>
+    </p>
+  </div>

@@ -1,38 +1,57 @@
-.content{
-display: flex;
-justify-content: space-around;
-align-items: center;   
-flex-direction: row;
+@import '../../../styles.scss';
+
+.content {
+    @include dFlex(space-around);
+    flex-direction: row;
+    width: 100%;
+    max-width: 1920px;
+    background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgba(8, 70, 59, 0.3) 0%, #1C1C1C 100%);
 }
 
-.title{
+.title {
     padding-bottom: 20px;
-    >h1{
+
+    >h1 {
         color: #3DCFB6;
         font-size: 24px;
+        font-family: 'Fira Code';
+        font-weight: 700;
     }
 }
 
-.skill-container{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+.skill-container {
+    @include dFlex(flex-start, flex-start);
     flex-direction: column;
     width: 520px;
     background-color: #3DCFB61A;
     border: 1px solid #3DCFB6;
     border-radius: 30px;
-    >div{
+    padding-top: 48px;
+
+    >div {
         padding-left: 32px;
         padding-bottom: 32px;
         padding-right: 32px;
-        }
+    }
 }
 
-.skill-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.skill-icons {
+    @include dFlex();
     gap: 72px;
     flex-wrap: wrap;
+    width: 632px;
+}
+
+.contact-me{
+    >h2{
+        font-size: 24px;
+        font-family: 'Fira Code';
+        font-weight: 700;
+        >span{
+            color: #3DCFB6;
+            font-size: 24px;
+            font-family: 'Fira Code';
+            font-weight: 700;
+        }
+    }
 }

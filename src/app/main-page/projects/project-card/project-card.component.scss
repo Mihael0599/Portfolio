@@ -1,11 +1,4 @@
-@import '../../../styles.scss';
-
-.content{
-    @include dFlex(center, flex-start);
-    flex-direction: column;
-    padding-top: 144px;
-    padding-left: 96px;
-}
+@import '../../../../styles.scss';
 
 .projects{
     @include dFlex(space-between);

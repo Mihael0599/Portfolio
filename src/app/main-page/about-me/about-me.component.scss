@@ -1,11 +1,11 @@
+@import '../../../styles.scss'; 
+
 .content{
     background-color: #1c1c1c;
     height: 708px;
     width: 100%;
     max-width: 1920px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dFlex();
     padding: 144px 0px;
     gap: 130px;
 }
@@ -17,23 +17,22 @@
 }
 
 .image-container{
-    display: flex;
     height: 100%;
     padding-left: 112px;
 }
 
 .about-me{
-    display: flex;
     height: 100%;
+    @include dFlex(flex-end, flex-start);
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
     padding-right: 96px;
     >.title{
         padding-bottom: 20px;
         >h1{
             color: #3DCFB6;
             font-size: 24px;
+            font-family: 'Karla';
+            font-weight: 500;
         }
     }
 }
@@ -45,22 +44,19 @@
     backdrop-filter: blur(4px);
     border: 1px solid #3DCFB6;
     padding-left: 32px;
+    padding-right: 32px;
     >div {
         >h1{
             color: #3DCFB6;
             font-size: 64px;
+            font-family: 'Fira Code';
+            font-weight: 700;
             padding-top: 32px;
             padding-bottom: 40px;
         }
     }
 }
 
-.description{
-    >h2{
-        color: white;
-        font-size: 18px;
-    }
-}
 
 .cards-container{
     padding-top: 32px;
@@ -68,9 +64,7 @@
     padding-right: 32px;
     >.cards{
         padding-top: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dFlex();
         gap: 24px;
         >div{
             >h3{
