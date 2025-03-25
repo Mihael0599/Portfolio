@@ -8,13 +8,5 @@
 }
 
 .projects{
-    @include dFlex(space-between);
-    flex-direction: row;
-    width: 880px;
-    height: 110px;
-    border-bottom: 1px solid rgba(61, 207, 182, 1);
-}
-
-.project-skills{
-    @include dFlex();
+    position: relative;
 }

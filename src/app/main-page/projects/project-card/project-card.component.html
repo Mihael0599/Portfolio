@@ -1,9 +1,24 @@
-<div *ngFor="let project of projectData" class="projects">
-    <h3>{{ project.projectName }}</h3>
-    <p class="project-skills">
-      <ng-container *ngFor="let tech of project.text; let i = index">
-        <span *ngIf="i > 0" class="pipe">|</span>
-        <span>{{ project.text }}</span>
-      </ng-container>
-    </p>
+<div class="content">
+  <div>
+    <div *ngFor="let project of projectData; let i = index" class="project" (mouseenter)="onMouseEnter(project)"
+      (mouseleave)="onMouseLeave()">
+      <div class="project-name">
+        <h3>{{ project.projectName }}</h3>
+        <img src="assets/img/arrow_outward.png" alt="">
+      </div>
+      <div class="projects-skills">
+        <div class="skill" *ngFor="let skill of project.text; let i = index">
+          <span class="pipe" *ngIf="i > 0">|</span>
+          <p>{{ skill }}</p>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="img-shadow">
+    <div *ngIf="hoveredProject" class="hover">
+      <p>Hallo es tut</p>
+      <img [src]="hoveredProject.imageURL" alt="">
+    </div>
+  </div>
+</div>
