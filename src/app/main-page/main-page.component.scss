@@ -1,5 +1,29 @@
+@import './../../styles.scss';
+
 *{
     margin: 0;
+}
+
+.landing-page-content{
+    @include dFlex();
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-me-content{
+    @include dFlex();
+    flex-direction: column;
+    width: 100%;
+}
+.skills-content{
+    @include dFlex();
+    flex-direction: column;
+    width: 100%;
+}
+.projects-content{
+    @include dFlex();
+    flex-direction: column;
+    width: 100%;
 }
 
 .about-me{

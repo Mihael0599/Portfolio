@@ -14,11 +14,11 @@
       </div>
     </div>
   </div>
-
-  <div class="img-shadow">
-    <div *ngIf="hoveredProject" class="hover">
-      <p>Hallo es tut</p>
-      <img [src]="hoveredProject.imageURL" alt="">
+    <div *ngIf="hoveredProject" class="project-img">
+    <div class="img-shadow">
+      <div class="hover">
+        <img [src]="hoveredProject.imageURL" alt="">
+      </div>
     </div>
   </div>
 </div>

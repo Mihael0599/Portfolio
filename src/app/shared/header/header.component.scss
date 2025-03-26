@@ -2,15 +2,17 @@
 
 .header {
   @include dFlex(space-between);
-  padding: 0 96px;
   padding-top: 32px;
   max-width: 1920px;
+  width: 100%;
   height: 98px;
+  background: linear-gradient(171deg, #1C1C1C 36.26%, #08463B 93.28%);
 }
 
 .buttons {
   @include dFlex();
   gap: 24px;
+  padding-left: 96px;
 
   >div {
     >a {
@@ -22,6 +24,7 @@
 }
 
 .logo {
+  padding-right: 96px;
   >img {
     width: 200px;
   }

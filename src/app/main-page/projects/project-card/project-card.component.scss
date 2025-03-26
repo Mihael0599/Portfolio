@@ -4,7 +4,8 @@
     @include dFlex();
     flex-direction: row;
     width: 100%;
-    max-width: 1920px
+    max-width: 1920px;
+    gap: 100px;
 }
 
 .project{
@@ -15,11 +16,6 @@
     border-bottom: 1px solid rgba(61, 207, 182, 1);
     &:hover{
         background-color: rgba(61, 207, 182, 0.3);
-        >.project-name{
-            >img{
-                display: block;
-            }
-        }
     }
 }
 
@@ -48,21 +44,19 @@
     font-size: 18px;
   }
 .hover{
-    background: white;
     border-radius: 20px;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: -20px;
+    left: -25px;
 }
+
 .img-shadow{
-        background-color: #1e4b46; /* Dein dunkles Grün */
-        background-image: repeating-linear-gradient(
-          135deg,               /* diagonaler Winkel */
-          #2ad3cb 0px,          /* Linienfarbe */
-          #2ad3cb 2px,          /* Liniendicke */
-          transparent 2px,      /* Abstand zur nächsten Linie */
-          transparent 20px      /* Abstand insgesamt */
-        );
-        padding: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: none;
+    background-image: repeating-linear-gradient(135deg,#2ad3cb 0px,#2ad3cb 2px, transparent 2px, transparent 10px);
+    height: 192px;
+    width: 290px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }

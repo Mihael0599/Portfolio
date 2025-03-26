@@ -5,6 +5,10 @@
     flex-direction: column;
     width: 104px;
     height: 116px;
+    &:hover{
+        width: 150px;
+        height: 150px;
+    }
     >p{
         color: white;
         padding-top: 8px;
