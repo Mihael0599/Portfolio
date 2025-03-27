@@ -23,4 +23,18 @@ export class SkillsComponent {
     {imageSrc: 'assets/img/scrum-icon.png', text: 'Scrum'},
     {imageSrc: 'assets/img/mindset-icon.png', text: 'Growth mindset'}
   ];
+
+  hoveredSkill: any = null;
+
+
+  onMouseEnter(img: any) {
+    this.hoveredSkill = img;
+  }
+
+  onMouseLeave() {
+    this.hoveredSkill = null;
+  }
+
+
 }
+

@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    cursor: url('./assets/img/cursor.png'), auto;
 }
 
 body {
@@ -66,11 +67,33 @@ button {
         height: 48px;
         width: 172px;
         border-radius: 100px;
+        overflow: hidden;
 
         >a {
+            position: relative;
             font-size: 18px;
             font-family: 'Karla';
             font-weight: 400;
+            &:hover{
+                cursor: pointer;
+                /* animation: mymove 1s linear infinite; */
+            }
+        }
+        &:hover{
+            border: 1px solid rgba(61, 207, 182, 1);
+            cursor: pointer;
+            >a{
+                color: rgba(61, 207, 182, 1);
+            }
         }
     }
 }
+
+@keyframes mymove {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: 300px;
+    }
+  }

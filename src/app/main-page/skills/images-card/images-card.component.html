@@ -1,4 +1,8 @@
 <div class="icons">
-  <img [src]="imageSrc" alt="Image" />
-  <p>{{ text }}</p>
+  <div [ngClass]="{hover: isHovered}" class="icon">
+    <img [src]="imageSrc" alt="Image" />
+  </div>
+  <div class="title">
+    <p>{{ text }}</p>
+  </div>
 </div>

@@ -18,7 +18,8 @@
         padding: 0;
         margin: 0;
         gap: 50px;
-        animation: scrollText 10s linear infinite;
+        animation: scrollText 25s linear infinite;
+        padding-left: 50px;
 
         >li {
             font-size: 32px;

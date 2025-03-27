@@ -1,14 +1,20 @@
 @import '../../../../styles.scss'; 
 
+
 .icons{
     @include dFlex();
+    flex-direction: column
+}
+
+.icon{
+    @include dFlex();
     flex-direction: column;
-    width: 104px;
-    height: 116px;
-    &:hover{
-        width: 150px;
-        height: 150px;
+    &.hover {
+        transform: scale(1.1);
     }
+}
+
+.title{
     >p{
         color: white;
         padding-top: 8px;

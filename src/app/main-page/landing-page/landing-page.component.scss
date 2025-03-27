@@ -64,6 +64,11 @@
     font-family: 'Karla';
     position: relative;
     bottom: 100px;
+    &:hover{
+        >a{
+            color: #3DCFB6;
+        }
+    }
 }
 
 .slide-text {

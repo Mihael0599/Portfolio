@@ -26,6 +26,7 @@
         </div>
     </div>
     <div class="skill-icons">
-        <app-images-card *ngFor="let img of imageData" [imageSrc]="img.imageSrc" [text]="img.text"></app-images-card>
+        <app-images-card *ngFor="let img of imageData" [imageSrc]="img.imageSrc" [text]="img.text" (mouseenter)="onMouseEnter(img)" [isHovered]="hoveredSkill === img"
+        (mouseleave)="onMouseLeave()"></app-images-card>
     </div>
 </div>

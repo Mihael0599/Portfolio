@@ -1,5 +1,5 @@
 <div class="slide-text">
-    <ul *ngFor="let repeat of [1, 2]">
+    <ul *ngFor="let repeat of [1, 2, 3]">
       <ng-container *ngFor="let item of items; let last = last">
         <li>{{ item }}</li>
         <li *ngIf="!last">•</li>
