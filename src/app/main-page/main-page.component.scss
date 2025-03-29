@@ -4,30 +4,9 @@
     margin: 0;
 }
 
-.landing-page-content{
+.content{
     @include dFlex();
     flex-direction: column;
     width: 100%;
 }
 
-.about-me-content{
-    @include dFlex();
-    flex-direction: column;
-    width: 100%;
-}
-.skills-content{
-    @include dFlex();
-    flex-direction: column;
-    width: 100%;
-}
-.projects-content{
-    @include dFlex();
-    flex-direction: column;
-    width: 100%;
-}
-
-.about-me{
-    display: flex;
-    width: 100%;
-    max-width: 1920px;
-}

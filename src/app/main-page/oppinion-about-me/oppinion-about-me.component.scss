@@ -1,0 +1,100 @@
+@import './../../../styles.scss';
+
+h1 {
+    font-size: 32px;
+}
+
+.oppinion-container{
+    @include dFlex();
+    flex-direction: column;
+    width: 100%;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 1rem;
+  }
+  
+  .carousel-track-wrapper {
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  .carousel-item {
+    flex: 0 0 300px;
+    margin: 0 1rem;
+    background: #1e4b45;
+    border: 1px solid #2ee5af;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    opacity: 0.3;
+    transform: scale(0.9);
+    transition: transform 0.5s, opacity 0.5s;
+  
+    &.active {
+      transform: scale(1.05);
+      opacity: 1;
+      z-index: 2;
+      border-color: #00ffcc;
+    }
+  
+    &.prev,
+    &.next {
+      opacity: 0.6;
+      transform: scale(0.95);
+      z-index: 1;
+    }
+  }
+  
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  
+    button {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .dots {
+      display: flex;
+      gap: 0.5rem;
+  
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #999;
+  
+        &.active {
+          background: #00ffcc;
+        }
+      }
+    }
+  }
+  
+  
+  
