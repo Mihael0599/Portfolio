@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   currentLang: 'en' | 'de' = 'de';
+  changeLogo: boolean = false;
 
   toggleLanguage() {
     this.currentLang = this.currentLang === 'en' ? 'de' : 'en';

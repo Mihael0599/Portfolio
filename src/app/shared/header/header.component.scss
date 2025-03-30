@@ -23,10 +23,19 @@
   }
 }
 
+.logo-hover {
+  display: none;
+}
+
 .logo {
   padding-right: 96px;
-  >img {
-    width: 200px;
+height: 110px;
+  width: 200px;
+  background-image: url('./../../../assets/img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:hover {
+    background-image: url('./../../../assets/img/logo_hover.png');
   }
 }
 

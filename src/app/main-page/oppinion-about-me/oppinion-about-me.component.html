@@ -2,29 +2,5 @@
     <div>
         <h1>What my colleagues say about me</h1>
     </div>
-    <div class="carousel-container">
-        <div class="carousel-track-wrapper">
-          <div class="carousel-track" id="carousel-track">
-            <div class="carousel-item" *ngFor="let t of testimonials; let i = index"
-                 [class.active]="i === currentIndex"
-                 [class.prev]="i === currentIndex - 1"
-                 [class.next]="i === currentIndex + 1">
-              <p>“{{ t.quote }}”</p>
-              <hr />
-              <span>{{ t.author }} – {{ t.role }}</span>
-            </div>
-          </div>
-        </div>
-      
-        <div class="carousel-controls">
-          <button id="prev-btn">←</button>
-          <div class="dots">
-            <span *ngFor="let t of testimonials; let i = index"
-                  class="dot"
-                  [class.active]="i === currentIndex"></span>
-          </div>
-          <button id="next-btn">→</button>
-        </div>
-      </div>
-
+    <app-carousel></app-carousel>
 </div>
