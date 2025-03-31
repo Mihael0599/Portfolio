@@ -7,9 +7,17 @@
                 <div class="lang de" [ngClass]="{ 'active': currentLang === 'de' }">DE</div>
             </div>
         </div>
-        <div><a href="">About me</a></div>
-        <div><a href="">Skills</a></div>
-        <div><a href="">Projects</a></div>
+        <div class="links">
+            <a
+            *ngFor="let link of links; let i = index"
+            (mouseenter)="hoveredIndex = i"
+            (mouseleave)="hoveredIndex = null"
+            [href]="link.href"
+          >
+          <span [ngClass]="{ 'dot-visible': hoveredIndex === i }" class="dot"></span>
+          {{ link.label }}
+          </a>
+        </div>
     </div>
     <div class="logo">
     </div>

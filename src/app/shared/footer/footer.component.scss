@@ -1,0 +1,65 @@
+@import './../../../styles.scss';
+
+.footer{
+    @include dFlex(space-between);
+    flex-direction: row;
+    width: 100%;
+    max-width: 1920px;
+    padding-top: 144px;
+    padding-bottom: 64px;
+    padding-left: 96px;
+    padding-right: 96px;
+    position: relative;
+}
+
+.logo-container{
+    @include dFlex(center, flex-start);
+    flex-direction: column;
+    >img{
+        position: absolute;
+        left: 50px;
+        top: 70px;
+        height: 110px;
+        width: 200px;
+    }
+}
+
+.links{
+    @include dFlex(center, flex-start);
+    flex-direction: column;
+    gap: 8px;
+    >a{
+        font-size: 20px;
+        font-family: 'Karla';
+        font-weight: 400;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        &:hover{
+            cursor: pointer;
+            color: #3DCFB6;
+        }
+    }
+}
+
+.name{
+    >span{
+        color: #3DCFB6;
+        font-family: 'Fira Code';
+        font-size: 18px;
+    };
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background-color:#6AD7BF;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+  }
+  
+  .dot-visible {
+    opacity: 1;
+  }

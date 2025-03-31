@@ -1,8 +1,13 @@
-body{
+@import './../styles.scss';
+
+body {
     max-width: 1920px;
 }
 
-.header{
-    display: flex;
-    justify-content: center;
+.header {
+    @include dFlex();
+}
+
+.footer {
+    @include dFlex();
 }

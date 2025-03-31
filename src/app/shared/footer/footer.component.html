@@ -1,1 +1,22 @@
-<p>footer works!</p>
+<div class="footer">
+    <div class="logo-container">
+        <img src="assets/img/logo.png" alt="">
+        <p>Web Developer</p>
+        <p>Spaichingen Germany</p>
+    </div>
+    <div class="name">
+        <span>© Mihael Drazic 2025</span>
+    </div>
+    <div class="links">
+        <a
+          *ngFor="let link of links; let i = index"
+          (mouseenter)="hoveredIndex = i"
+          (mouseleave)="hoveredIndex = null"
+          [href]="link.href"
+          [attr.target]="link.target"
+        >
+          <span [ngClass]="{ 'dot-visible': hoveredIndex === i }" class="dot"></span>
+          {{ link.label }}
+        </a>
+      </div>
+</div>
