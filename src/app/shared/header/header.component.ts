@@ -32,8 +32,4 @@ export class HeaderComponent {
     this.currentLang = this.currentLang === 'en' ? 'de' : 'en';
   }
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView({behavior: 'smooth'});
-}
-
 }
