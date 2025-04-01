@@ -36,19 +36,26 @@ input[type=checkbox] {
     border-bottom: 2px solid #3DCFB680;
     width: 100%;
 
-    >input {
+    >input, textarea {
         font-size: 18px;
         font-family: 'Karla';
         border: none;
         background: none;
         color: whitesmoke;
+        width: 100%;
+        padding: 0;
 
         &:focus {
             color: whitesmoke;
             outline: none;
         }
     }
+    >textarea{
+        height: 50px;
+    }
 }
+
+
 
 .border-top {
     border-top: 2px solid #3DCFB680;
