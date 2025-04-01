@@ -39,7 +39,7 @@
 }
 
 .skill-icons {
-    @include dFlex();
+    @include dFlex(flex-start, flex-start);
     gap: 72px;
     flex-wrap: wrap;
     width: 632px;
@@ -59,3 +59,101 @@
         }
     }
 }
+
+.icons{
+    position: relative;
+    @include dFlex();
+    flex-direction: column;
+    &:hover{
+        >.title{
+            cursor: pointer;
+        }
+    }
+}
+
+.icon{
+    @include dFlex();
+    flex-direction: column;
+}
+
+.title{
+    width: 70px;
+    >p{
+        color: white;
+        padding-top: 8px;
+        font-size: 18px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+
+.icons:hover{
+    >.icon{
+        transform: scale(1.1);
+    }
+    >.title{
+        >p{
+            color: #3DCFB6;
+        }
+    }
+    .tech-card{
+        display: flex;
+    }
+}
+
+.tech-card {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 188px;
+    height: 129px;
+    top: -135px;
+    left: -20px;
+    z-index: 1000;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-180%);
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid white;
+      }
+  
+    p {
+      color: #00c7b7;
+      font-size: 16px;
+      padding-bottom: 8px;
+    }
+  
+    .tech-icons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+  
+      .tech-item {
+@include dFlex();
+flex-direction: column;
+  
+        img {
+          padding-bottom: 5px;
+        }
+  
+        span {
+          color: #3DCFB6;
+          ;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  

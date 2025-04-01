@@ -1,7 +1,7 @@
 @import './../../../styles.scss';
 
 .footer{
-    @include dFlex(space-between);
+    @include dFlex(space-between, flex-end);
     flex-direction: row;
     width: 100%;
     max-width: 1920px;
@@ -10,6 +10,7 @@
     padding-left: 96px;
     padding-right: 96px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .logo-container{
@@ -18,10 +19,25 @@
     >img{
         position: absolute;
         left: 50px;
-        top: 70px;
+        top: 110px;
         height: 110px;
         width: 200px;
     }
+}
+
+.logo-container:hover{
+    img{
+        display: none;
+    }
+
+    .logo-hover{
+        cursor: pointer;
+        display: block;
+    }
+}
+
+.logo-hover{
+    display: none;
 }
 
 .links{
@@ -43,6 +59,8 @@
 }
 
 .name{
+    @include dFlex();
+    height: 60px;
     >span{
         color: #3DCFB6;
         font-family: 'Fira Code';

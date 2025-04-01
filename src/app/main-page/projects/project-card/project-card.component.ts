@@ -13,7 +13,7 @@ export class ProjectCardComponent {
   projectData = [
     { projectName: 'Join', text: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebas'], imageURL: 'assets/img/join.png' },
     { projectName: 'El Pollo Loco', text: ['HTML', 'CSS', 'JavaScript'], imageURL: 'assets/img/elpolloloco.png' },
-    { projectName: 'DA Bubble', text: ['Angular', 'TypeScript', 'Firebas'], imageURL: 'assets/img/dabubble.png' },
+    { projectName: 'DA Bubble', text: ['Angular', 'TypeScript', 'Firebase'], imageURL: 'assets/img/dabubble.png' },
   ];
 
   hoverIndex: number | null = null;
