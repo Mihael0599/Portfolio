@@ -95,6 +95,44 @@
     position: relative;
 }
 
+.github-container, .linkedin-container{
+    @include dFlex();
+    position: relative;
+    >span{
+        font-size: 26px;   
+        color: #3DCFB6;
+        position: absolute;
+        top: 2px;
+        right: -10px; 
+        display: none;
+    }
+}
+
+.github-container:hover, .linkedin-container:hover{
+    >a{
+        display: none;
+    }
+    .github-hover{
+        display: block;
+    }
+    .dot{
+        display: block
+    }
+    .linkedin-hover{
+        display: block
+    }
+}
+
+.social{
+    @include dFlex();
+    flex-direction: column;
+    width: 60px;
+}
+
+.github-hover, .linkedin-hover{
+    display: none;
+}
+
 @keyframes floatUpDown {
 
     0%,

@@ -6,7 +6,8 @@
     width: 100%;
     max-width: 1920px;
     background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgba(8, 70, 59, 0.3) 0%, #1C1C1C 100%);
-    >div{
+
+    >div {
         padding-left: 96px;
     }
 }
@@ -46,12 +47,13 @@
     padding-right: 96px;
 }
 
-.contact-me{
-    >h2{
+.contact-me {
+    >h2 {
         font-size: 24px;
         font-family: 'Fira Code';
         font-weight: 700;
-        >span{
+
+        >span {
             color: #3DCFB6;
             font-size: 24px;
             font-family: 'Fira Code';
@@ -60,25 +62,27 @@
     }
 }
 
-.icons{
+.icons {
     position: relative;
     @include dFlex();
     flex-direction: column;
-    &:hover{
-        >.title{
+
+    &:hover {
+        >.title {
             cursor: pointer;
         }
     }
 }
 
-.icon{
+.icon {
     @include dFlex();
     flex-direction: column;
 }
 
-.title{
+.title {
     width: 70px;
-    >p{
+
+    >p {
         color: white;
         padding-top: 8px;
         font-size: 18px;
@@ -87,16 +91,18 @@
     }
 }
 
-.icons:hover{
-    >.icon{
+.icons:hover {
+    >.icon {
         transform: scale(1.1);
     }
-    >.title{
-        >p{
+
+    >.title {
+        >p {
             color: #3DCFB6;
         }
     }
-    .tech-card{
+
+    .tech-card {
         display: flex;
     }
 }
@@ -116,6 +122,7 @@
     top: -135px;
     left: -20px;
     z-index: 1000;
+
     &::after {
         content: "";
         position: absolute;
@@ -127,33 +134,31 @@
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-top: 20px solid white;
-      }
-  
+    }
+
     p {
-      color: #00c7b7;
-      font-size: 16px;
-      padding-bottom: 8px;
+        color: #00c7b7;
+        font-size: 16px;
+        padding-bottom: 8px;
     }
-  
+
     .tech-icons {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-  
-      .tech-item {
-@include dFlex();
-flex-direction: column;
-  
-        img {
-          padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        .tech-item {
+            @include dFlex();
+            flex-direction: column;
+
+            img {
+                padding-bottom: 5px;
+            }
+
+            span {
+                color: #3DCFB6;
+                font-weight: 500;
+            }
         }
-  
-        span {
-          color: #3DCFB6;
-          ;
-          font-weight: 500;
-        }
-      }
     }
-  }
-  
+}
