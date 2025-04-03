@@ -1,9 +1,17 @@
 @import '../../../../styles.scss';
 
 
-h1 {
+label {
     font-size: 24px;
     font-weight: 500;
+    color: #3DCFB6
+}
+
+span{
+    font-size: 18px;
+    font-family: 'Karla';
+    color: #EC7B7BCC;
+
 }
 
 form {
@@ -31,6 +39,7 @@ input[type=checkbox] {
 
 .input-container {
     height: 131px;
+    position: relative;
     @include dFlex(space-around, flex-start);
     flex-direction: column;
     border-bottom: 2px solid #3DCFB680;

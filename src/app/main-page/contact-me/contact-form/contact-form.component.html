@@ -1,18 +1,31 @@
-<form>
+<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="input-container border-top">
-        <h1>What's your name?</h1>
-        <input type="text" placeholder="Your name goes here">
+        <label for="name">What's your name?</label>
+        <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" id="name" name="name" type="text" placeholder="Your name goes here" required>
+        @if (!name.valid && name.touched && !name.disabled) {
+            <span>Oops! it seems your name is missing or is too short </span>
+        }
     </div>
     <div class="input-container">
-        <h1>What's your email?</h1>
-        <input type="email" placeholder="youremail@email.com">
+        <label for="email">What's your eimal?</label>
+        <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" type="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+        @if (!email.valid && email.touched && !email.disabled) {
+            <span>Hoppla! your email is required</span>
+        }
     </div>
     <div class="input-container">
-        <h1>How can i help you?</h1>
-        <textarea type="text" placeholder="Hello Mihael, I am interested in..."></textarea>
+        <label for="message">How can i help you?</label>
+        <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" type="text" placeholder="Hello Mihael, I am interested in..." required></textarea>
+      @if (!message.valid && message.touched && !message.disabled) {
+        <span>What do you need to develop?</span>
+      }
     </div>
     <div class="check-box-container">
-        <input class="checkbox" type="checkbox">
+        <input id="checkBox" class="checkbox" type="checkbox">
         <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
+    </div>
+
+    <div>
+        <input id="Submit" type="submit" value="Submit">
     </div>
 </form>

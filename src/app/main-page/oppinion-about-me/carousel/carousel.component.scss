@@ -80,10 +80,14 @@
   
   .author {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 100%;
+    >.line{
+      width: 100%;
+      border: 1px solid white;
+    }
   }
   
   hr {
@@ -97,7 +101,38 @@
       cursor: pointer;
     }
   }
+
+  .arrow-left-hover{
+    display: none;
+  }
+
+  .arrow-right-hover{
+    display: none;
+  }
   
   .carousel-spacer {
     flex: 0 0 calc((100% - 550px) / 2);
+  }
+
+  .btn-left, .btn-right{
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn-left:hover{
+    .arrow{
+      display: none;
+    }
+    .arrow-left-hover{
+      display: block;
+    }
+  }
+
+  .btn-right:hover{
+    .arrow{
+      display: none;
+    }
+    .arrow-right-hover{
+      display: block;
+    }
   }

@@ -1,29 +1,31 @@
 <div class="carousel-container">
-    <div class="carousel-track-wrapper">
-      <div class="carousel-track" id="carousel-track">
-        <div class="carousel-spacer"></div>
-        <div class="carousel-item" *ngFor="let t of testimonials; let i = index"
-             [class.active]="i === currentIndex"
-             [class.prev]="i === currentIndex - 1"
-             [class.next]="i === currentIndex + 1">
+  <div class="carousel-track-wrapper">
+    <div class="carousel-track" id="carousel-track">
+      <div class="carousel-spacer"></div>
+      <div class="carousel-item" *ngFor="let t of testimonials; let i = index" [class.active]="i === currentIndex"
+        [class.prev]="i === currentIndex - 1" [class.next]="i === currentIndex + 1">
+        <div>
           <p>“{{ t.quote }}”</p>
           <div class="author">
-          <hr />
-          <span>{{ t.author }} – {{ t.role }}</span>
+            <span class="line"></span>
+            <div>
+              <span>{{ t.author }} - {{ t.role }}</span>
+            </div>
+          </div>
         </div>
-        </div>
-        <div class="carousel-spacer"></div>
       </div>
-    </div>
-  
-    <div class="carousel-controls">
-      <button id="prev-btn"><img class="arrow" src="assets/img/arrow-left.png" alt=""></button>
-      <div class="dots">
-        <span *ngFor="let t of testimonials; let i = index"
-              class="dot"
-              [class.active]="i === currentIndex"></span>
-      </div>
-      <button id="next-btn"><img class="arrow" src="assets/img/arrow-right.png" alt=""></button>
+      <div class="carousel-spacer"></div>
     </div>
   </div>
+
+  <div class="carousel-controls">
+    <button class="btn-left" id="prev-btn"><img class="arrow" src="assets/img/arrow-left.png" alt=""><img
+        class="arrow-left-hover" src="assets/img/arrow-left-color.png" alt=""></button>
+    <div class="dots">
+      <span *ngFor="let t of testimonials; let i = index" class="dot" [class.active]="i === currentIndex"></span>
+    </div>
+    <button class="btn-right" id="next-btn"><img class="arrow" src="assets/img/arrow-right.png" alt=""><img
+        class="arrow-right-hover" src="assets/img/arrow-right-color.png" alt=""></button>
+  </div>
+</div>
 -
