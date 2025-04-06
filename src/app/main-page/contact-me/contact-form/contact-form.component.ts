@@ -21,6 +21,8 @@ export class ContactFormComponent {
     message: "",
   }
 
+  privacyAccepted: boolean = false;
+
   mailTest = true;
 
   post = {
@@ -35,7 +37,8 @@ export class ContactFormComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    console.log(this.contactData);
+/*     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -50,7 +53,7 @@ export class ContactFormComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
-    }
+    } */
   }
 
 }

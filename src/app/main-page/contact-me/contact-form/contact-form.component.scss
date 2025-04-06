@@ -21,12 +21,18 @@ form {
 
 .check-box-container {
     padding-top: 40px;
+    position: relative;
     @include dFlex();
     gap: 10px;
+    >span{
+        position: absolute;
+        top: 70px;
+        left: -5px
+    };
 }
 
-input[type=checkbox] {
-    border: 1px solid #3DCFB6;
+input[type="checkbox"] {
+    border: 2px solid #3DCFB6;
     transform: scale(1.5);
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
@@ -35,7 +41,29 @@ input[type=checkbox] {
     padding: 5px;
     vertical-align: middle;
     background-color: #1C1C1C;
-}
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 2.4px;
+      width: 3px;
+      height: 6px;
+      border: solid #3DCFB6;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+  
+    &:checked::before {
+      opacity: 1;
+    }
+  }
+
 
 .input-container {
     height: 131px;
@@ -62,16 +90,16 @@ input[type=checkbox] {
     >textarea{
         height: 50px;
     }
+    >span{
+        position: absolute;
+        top: 108px;
+    }
 }
 
 
 
 .border-top {
     border-top: 2px solid #3DCFB680;
-}
-
-p {
-    font-size: 16px;
 }
 
 a {
@@ -84,3 +112,31 @@ a {
         text-decoration: underline;
     }
 }
+
+.button-container {
+    width: 100%;
+    padding-top: 40px;
+    @include dFlex();
+  
+    >button {
+      border: 1px solid white;
+      border-radius: 100px;
+      color: white;
+      height: 48px;
+      width: 140px;
+  
+      &:hover {
+        cursor: pointer;
+      }
+  
+      &:disabled {
+        border: 1px solid grey;
+        color: grey;
+  
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+

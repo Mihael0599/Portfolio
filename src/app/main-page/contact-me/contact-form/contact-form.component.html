@@ -15,17 +15,20 @@
     </div>
     <div class="input-container">
         <label for="message">How can i help you?</label>
-        <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" type="text" placeholder="Hello Mihael, I am interested in..." required></textarea>
+        <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="5" id="message" name="message" type="text" placeholder="Hello Mihael, I am interested in..." required></textarea>
       @if (!message.valid && message.touched && !message.disabled) {
         <span>What do you need to develop?</span>
       }
     </div>
     <div class="check-box-container">
-        <input id="checkBox" class="checkbox" type="checkbox">
+        <input #privacy="ngModel" [(ngModel)]="privacyAccepted" name="privacy" id="checkBox" class="checkbox" type="checkbox" required>
         <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
+        @if (!privacy.valid && privacy.touched) {
+            <span>Please accept the privacy policy.</span>
+        }
     </div>
 
-    <div>
-        <input id="Submit" type="submit" value="Submit">
+    <div class="button-container">
+        <button [disabled]="!contactForm.form.valid && !privacyAccepted" id="Submit">Say Hello ;&#41;</button>
     </div>
 </form>
