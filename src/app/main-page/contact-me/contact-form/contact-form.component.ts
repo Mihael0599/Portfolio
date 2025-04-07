@@ -23,10 +23,10 @@ export class ContactFormComponent {
 
   privacyAccepted: boolean = false;
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://mihael-drazic.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -38,7 +38,7 @@ export class ContactFormComponent {
 
   onSubmit(ngForm: NgForm) {
     console.log(this.contactData);
-/*     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -53,7 +53,7 @@ export class ContactFormComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
-    } */
+    }
   }
 
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { GlobalDataService } from '../../global-data.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  currentLang: 'en' | 'de' = 'de';
+
+  globalData = inject(GlobalDataService);
+
   changeLogo: boolean = false;
   hoveredIndex: number | null = null;
 
@@ -29,7 +32,7 @@ export class HeaderComponent {
   ];
 
   toggleLanguage() {
-    this.currentLang = this.currentLang === 'en' ? 'de' : 'en';
+    this.globalData.currentLang = this.globalData.currentLang === 'en' ? 'de' : 'en';
   }
 
 }

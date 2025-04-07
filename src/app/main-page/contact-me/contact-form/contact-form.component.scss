@@ -89,6 +89,7 @@ input[type="checkbox"] {
     }
     >textarea{
         height: 50px;
+        max-width: 650px;
     }
     >span{
         position: absolute;
@@ -109,7 +110,7 @@ a {
     &:hover {
         cursor: pointer;
         color: white;
-        text-decoration: underline;
+        text-decoration: underline #3DCFB6;
     }
 }
 

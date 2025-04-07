@@ -1,7 +1,7 @@
 <div class="content">
   <div>
     <div *ngFor="let project of projectData; let i = index" class="project" (mouseenter)="onMouseEnter(project)"
-      (mouseleave)="onMouseLeave()">
+      (mouseleave)="onMouseLeave()" (click)="openModal(project, i)">
       <div class="project-name">
         <h3>{{ project.projectName }}</h3>
         <img src="assets/img/arrow_outward.png" alt="">
@@ -14,11 +14,30 @@
       </div>
     </div>
   </div>
-    <div *ngIf="hoveredProject" class="project-img">
+  <div *ngIf="hoveredProject" class="project-img">
     <div class="img-shadow">
       <div class="hover">
         <img [src]="hoveredProject.imageURL" alt="">
       </div>
     </div>
   </div>
+
+  <div class="pop-up" *ngIf="showModal">
+    <div>
+      <div>
+        <h1 *ngIf="selectedIndex !== null">
+          {{ (selectedIndex + 1) | number: '2.0' }}
+        </h1>
+      </div>
+      <div>
+        <h2>{{selectedProject?.projectName}}</h2>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div></div>
+  </div>
+
 </div>

@@ -1,10 +1,9 @@
-import { NgFor, NgIf } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
-
+import { CurrencyPipe, DatePipe, DecimalPipe, NgFor, NgIf } from '@angular/common';
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor, NgIf, DecimalPipe],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.scss'
 })
@@ -16,6 +15,9 @@ export class ProjectCardComponent {
     { projectName: 'DA Bubble', text: ['Angular', 'TypeScript', 'Firebase'], imageURL: 'assets/img/dabubble.png' },
   ];
 
+  selectedProject: any = null;
+  selectedIndex: number | null = null;
+  showModal: boolean = false;
   hoverIndex: number | null = null;
   hoveredProject: any = null;
 
@@ -30,6 +32,12 @@ export class ProjectCardComponent {
 
   onMouseLeave() {
     this.hoveredProject = null;
+  }
+
+  openModal(project: any, index: number) {
+    this.selectedProject = project;
+    this.selectedIndex = index;
+    this.showModal = true;
   }
 
 }
