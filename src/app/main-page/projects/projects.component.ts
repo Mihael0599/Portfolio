@@ -10,5 +10,6 @@ import { NgFor } from '@angular/common';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-
+  
+  
 }

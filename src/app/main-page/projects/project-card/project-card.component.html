@@ -1,13 +1,13 @@
 <div class="content">
   <div>
     <div *ngFor="let project of projectData; let i = index" class="project" (mouseenter)="onMouseEnter(project)"
-      (mouseleave)="onMouseLeave()" (click)="openModal(project, i)">
+      (mouseleave)="onMouseLeave()" (click)="openModal(i)">
       <div class="project-name">
         <h3>{{ project.projectName }}</h3>
-        <img src="assets/img/arrow_outward.png" alt="">
+        <img class="arrow" src="assets/img/arrow_outward.png" alt="">
       </div>
       <div class="projects-skills">
-        <div class="skill" *ngFor="let skill of project.text; let i = index">
+        <div class="skill" *ngFor="let skill of project.skills; let i = index">
           <span class="pipe" *ngIf="i > 0">|</span>
           <p>{{ skill }}</p>
         </div>
@@ -21,23 +21,6 @@
       </div>
     </div>
   </div>
-
-  <div class="pop-up" *ngIf="showModal">
-    <div>
-      <div>
-        <h1 *ngIf="selectedIndex !== null">
-          {{ (selectedIndex + 1) | number: '2.0' }}
-        </h1>
-      </div>
-      <div>
-        <h2>{{selectedProject?.projectName}}</h2>
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div></div>
-  </div>
-
+  <app-project-modal class="dialog" *ngIf="showModal" [selectedIndex]="selectedIndex" [selectedProject]="selectedProject" (close)="closeModal()">
+  </app-project-modal>
 </div>

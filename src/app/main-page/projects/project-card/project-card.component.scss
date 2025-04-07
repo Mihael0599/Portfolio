@@ -16,7 +16,11 @@
     height: 110px;
     border-bottom: 1px solid rgba(61, 207, 182, 1);
     &:hover{
+        transition: 0.3s ease-in-out;
         background-color: rgba(61, 207, 182, 0.3);
+        .arrow{
+            display: block;
+        }
     }
 }
 
@@ -62,11 +66,13 @@
     align-items: flex-start;
 }
 
-.pop-up{
+.dialog{
     position: absolute;
     height: 656px;
     width: 1300px;
-    left: 70px;
+    left: 30px;
     background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+    border: 1px solid #3DCFB6;
+    border-radius: 30px;
 
 }

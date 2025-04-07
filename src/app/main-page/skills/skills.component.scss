@@ -162,3 +162,52 @@
         }
     }
 }
+
+.btn-outline {
+    display: inline-block;
+    padding: 13px 24px;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Karla';
+    text-decoration: none;
+    font-weight: 500;
+    transition: border 0.3s, color 0.3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btn-outline:hover {
+    border: 1px solid #3DCFB6;
+    color: #3DCFB6;
+  }
+  
+  .slide-text {
+    display: inline-block;
+    transition: transform 3s ease;
+  }
+  
+  .btn-outline:hover .slide-text {
+    animation: slide-reset 3s ease-in-out infinite;
+  }
+  
+  @keyframes slide-reset {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    49% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

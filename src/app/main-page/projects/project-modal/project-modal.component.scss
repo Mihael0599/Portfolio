@@ -1,0 +1,159 @@
+@import './../../../../styles.scss';
+
+.pop-up {
+    position: relative;
+    @include dFlex(space-between);
+    flex-direction: row;
+}
+
+.modal-content {
+    @include dFlex(center, flex-start);
+    flex-direction: column;
+    padding-top: 90px;
+    padding-left: 80px;
+    width: 480px;
+}
+
+h1 {
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 128px;
+}
+
+h2 {
+    font-family: 'Fira Code';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80%;
+    letter-spacing: -3px;
+}
+
+h3 {
+    font-family: 'Fira Code';
+    font-size: 24px;
+    font-weight: 700;
+    color: #3DCFB6;
+}
+
+p {
+    font-family: 'Karla';
+    font-size: 18px;
+    color: white;
+}
+
+span {
+    font-family: 'Karla';
+    font-size: 16px;
+    color: white;
+}
+
+.close-button-container {
+    width: 48px;
+    height: 48px;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    right: 80px;
+    top: 56px;
+    background-image: url('./../../../../assets/img/close-button.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-image: url('./../../../../assets/img/close-button-color.png');
+    }
+
+    >button {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.description {
+    padding-top: 40px;
+    @include dFlex(center, flex-start);
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills {
+    padding-top: 32px;
+    @include dFlex();
+    flex-direction: row;
+    gap: 16px;
+
+    >div {
+        @include dFlex();
+        flex-direction: row;
+        gap: 4px;
+    }
+}
+
+.links {
+    padding-top: 40px;
+    @include dFlex();
+    flex-direction: row;
+    gap: 32px;
+}
+
+.project-img {
+    @include dFlex();
+    padding-top: 40px;
+    padding-right: 80px;
+
+    >img {
+        width: 520px;
+        height: 370px;
+    }
+}
+
+
+.btn-next {
+    position: absolute;
+    right: 80px;
+    bottom: 0px;
+    @include dFlex();
+    cursor: pointer;
+
+    >button {
+        color: #3DCFB6;
+        font-size: 18px;
+        font-family: 'Karla';
+        cursor: pointer;
+    }
+    &:hover{
+        >button{
+            color: white
+        }
+        >img{
+            transition: 0.3s ease-in-out;
+            transform: translateX(5px);
+            cursor: pointer;
+        }
+    }
+}
+
+.btn-outline {
+    @include dFlex();
+    gap: 3px;
+    padding: 13px 24px;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Karla';
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.btn-outline:hover {
+    border: 1px solid #3DCFB6;
+    color: #3DCFB6;
+
+    >img {
+        transition: 0.3s ease-in-out;
+        transform: translate(5px, -5px)
+    }
+
+    ;
+}
