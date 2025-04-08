@@ -4,10 +4,10 @@
             <h2>Portfolio</h2>
         </div>
         <div>
-            <h1>Featured Projects</h1>
+            <h1>{{"featuredProjects" | translate }}</h1>
         </div>
         <div>
-            <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+            <p [innerHTML]="'featuredProjectsText' | translate"></p>
         </div>
         <div>
             <app-project-card></app-project-card>

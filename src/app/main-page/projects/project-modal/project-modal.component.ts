@@ -1,10 +1,11 @@
 import { DecimalPipe, NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-modal',
   standalone: true,
-  imports: [NgIf, DecimalPipe, NgFor],
+  imports: [NgIf, DecimalPipe, NgFor, TranslateModule],
   templateUrl: './project-modal.component.html',
   styleUrl: './project-modal.component.scss'
 })

@@ -32,6 +32,18 @@ a {
     color: white;
 }
 
+a.test {
+    color: #3DCFB6;
+    font-size: 16px;
+    font-family: 'Fira Code';
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        text-decoration: underline #3DCFB6;
+    }
+}
+
 h1 {
     color: #3DCFB6;
     font-size: 64px;

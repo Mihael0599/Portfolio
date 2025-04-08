@@ -7,8 +7,8 @@
       <h2>{{ selectedProject.projectName }}</h2>
     </div>
     <div class="description">
-      <h3>What is this project about?</h3>
-      <p>{{ selectedProject.description }}</p>
+      <h3>{{"aboutProject" | translate }}</h3>
+      <p>{{ selectedProject.description | translate }}</p>
     </div>
     <div class="skills" *ngIf="selectedProject">
       <div *ngFor="let skill of selectedProject.skills">

@@ -1,10 +1,11 @@
 import { NgFor } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, TranslateModule],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'
 })
@@ -15,17 +16,17 @@ export class CarouselComponent implements AfterViewInit {
     {
       author: "T. Schulz",
       role: "Frontend Developer",
-      quote: "Our project benefited enormously from Simon’s efficient way of working."
+      quote: "testimonials.1.quote"
     },
     {
       author: "H. Janisch",
       role: "Team Partner",
-      quote: "Lukas has proven to be a reliable group partner. His technical skills and proactive approach were crucial to the success of our project."
+      quote: "testimonials.2.quote"
     },
     {
       author: "A. Fischer",
       role: "Team Partner",
-      quote: "I had the good fortune of working with Lukas in a group project at the Developer Akademie that involved a lot of effort..."
+      quote: "testimonials.3.quote"
     },
   ];
 

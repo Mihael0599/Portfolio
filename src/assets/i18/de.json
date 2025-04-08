@@ -2,40 +2,68 @@
   "About me": "Über mich",
   "Skills": "Fähigkeiten",
   "Projects": "Projekte",
-  "aboutMeTitle": "Wer bin ich",
+  "whoAmI": "Wer bin ich",
   "checkMyWork": "Projekte ansehen",
   "contactMe": "Kontakt aufnehmen",
   "frontendDeveloper": "Frontend-Entwickler",
   "openToWork": "Offen für neue berufliche Möglichkeiten",
   "availableRemote": "Verfügbar für Remote-Arbeit",
   "basedInSpaichingen": "Wohnhaft in Spaichingen",
-  "AboutMeTitle": "Über mich",
-  "AboutMeDescription": "Hi ich bin Mihael! Ich bin Frontend-Entwickler mit einem starken Fokus auf moderne Webtechnologien wie HTML, CSS, JavaScript und Frameworks wie Angular. Mein Ziel ist es, intuitive und performante Benutzeroberflächen zu entwickeln, die sowohl funktional als auch optisch ansprechend sind.",
-  "AboutMeLocation": "Ich lebe in Spaichingen, einer kleinen Stadt nahe dem Bodensee. Aktuell bin ich offen für Remote-Arbeit und freue mich auf spannende neue Aufgaben im IT-Bereich.",
-  "AboutMeMindSet": "Durch meine Neugier und meinen Lernwillen arbeite ich mich schnell in neue Technologien ein und liebe es, kreative Lösungen für komplexe Herausforderungen zu finden.",
-  "AboutMeProblemSolving": "Ich liebe es, kreative und effiziente Lösungen für komplexe Probleme zu finden. Mit analytischem Denken, Ausdauer und Teamgeist arbeite ich zielgerichtet an jeder Herausforderung – und lerne dabei ständig dazu.",
-  "Technologies": "Technologien",
-  "SkillSet": "Fähigkeiten",
-  "SkillSetDescription": "In meiner Arbeit als Frontend-Entwickler setze ich moderne Webtechnologien wie HTML, CSS, JavaScript sowie Frameworks wie Angular gezielt ein, um benutzerfreundliche und performante Anwendungen zu entwickeln. Ich habe Erfahrung im Umsetzen responsiver Designs, der Integration von APIs und dem Entwickeln interaktiver Benutzeroberflächen. Ich lerne stetig dazu, weil ich überzeugt bin, dass in der Webentwicklung ständige Weiterbildung der Schlüssel zu Qualität und Innovation ist.",
-  "needAnotherSkill": "Brauchen Sie eine andere Fähigkeit?",
+  "aboutMeTitle": "Über mich",
+  "aboutMeDescription": "Hi ich bin Mihael! Ich bin Frontend-Entwickler mit einem starken Fokus auf moderne Webtechnologien wie HTML, CSS, JavaScript und Frameworks wie Angular. Mein Ziel ist es, intuitive und performante Benutzeroberflächen zu entwickeln, die sowohl funktional als auch optisch ansprechend sind.",
+  "aboutMeLocation": "Ich lebe in Spaichingen, einer kleinen Stadt nahe dem Bodensee. Aktuell bin ich offen für Remote-Arbeit und freue mich auf spannende neue Aufgaben im IT-Bereich.",
+  "aboutMeMindSet": "Durch meine Neugier und meinen Lernwillen arbeite ich mich schnell in neue Technologien ein und liebe es, kreative Lösungen für komplexe Herausforderungen zu finden.",
+  "aboutMeProblemSolving": "Ich liebe es, kreative und effiziente Lösungen für komplexe Probleme zu finden. Mit analytischem Denken, Ausdauer und Teamgeist arbeite ich zielgerichtet an jeder Herausforderung – und lerne dabei ständig dazu.",
+  "technologies": "Technologien",
+  "skillSet": "Fähigkeiten",
+  "skillSetDescription": "In meiner Arbeit als Frontend-Entwickler setze ich moderne Webtechnologien wie HTML, CSS, JavaScript sowie Frameworks wie Angular gezielt ein, um benutzerfreundliche und performante Anwendungen zu entwickeln. Ich habe Erfahrung im Umsetzen responsiver Designs, der Integration von APIs und dem Entwickeln interaktiver Benutzeroberflächen. Ich lerne stetig dazu, weil ich überzeugt bin, dass in der Webentwicklung ständige Weiterbildung der Schlüssel zu Qualität und Innovation ist.",
+  "youNeed": "Brauchen Sie",
+  "anotherSkill": "eine andere Fähigkeit?",
   "needAnotherSkillText": "Melden Sie sich gerne bei mir – ich freue mich darauf, mein Wissen zu erweitern und neue Herausforderungen anzunehmen.",
   "letsTalk": "Jetzt Kontakt aufnehmen",
-  "Featured Projects": "Meine Projekte",
-  "Featured ProjectsText": "Schau dir einige meiner liebsten Projekte an! Jedes Projekt ist eine kleine Herausforderung gewesen – und zeigt, was ich gerne baue und wie ich arbeite.",
+  "specialInterest": "Ich habe ein besonderes<br>Interesse am Lernen",
+  "featuredProjects": "Meine Projekte",
+  "featuredProjectsText": "Schau dir einige meiner liebsten Projekte an!<br> Jedes Projekt ist eine kleine Herausforderung gewesen – und zeigt, was ich gerne baue und wie ich arbeite.",
   "aboutProject": "Was ist dieses Projekt?",
-  "aboutJoin": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
-  "aboutElPolloLoco": "Ein 2D-Jump-and-Run-Spiel mit objektorientierter Architektur. Das Spiel enthält Sammelobjekte, Gegnerlogik und eine Angriffsfunktion durch Wurfobjekte.",
-  "aboutDaBubble": "Ein Slack-Clone mit Fokus auf Echtzeitkommunikation, klar strukturierter Kanalverwaltung und benutzerfreundlichem Design. Die Anwendung ermöglicht reibungslose Teamarbeit und schnelle Abstimmung.",
   "oppinionAboutMe": "Was meine Kollegen über mich sagen",
-  "oppinion1": "„Mihael hat sich als zuverlässiger Teamkollege erwiesen. Seine technischen Fähigkeiten und sein proaktives Handeln waren entscheidend für den Erfolg unseres Projekts.“",
-  "oppinion2": "„Die effiziente Arbeitsweise von Mihael war ein großer Gewinn für unser Projekt.“",
-  "oppinion3": "„Ich hatte das Glück, mit Mihael an einem Gruppenprojekt bei der Developer Akademie zusammenzuarbeiten, das viel Einsatz erforderte …“",
-  "contactMeTitle": "Lassen Sie uns zusammenarbeiten",
+  "letsWork": "Lassen Sie uns",
+  "together": "zusammenarbeiten",
   "problemSlove": "Ein Problem zu lösen?",
   "problemDescription": "Ich bin auf der Suche nach Projekten, in denen ich mich als Frontend-Entwickler einbringen kann – remote oder im Team. Mit meiner strukturierten und lösungsorientierten Arbeitsweise unterstütze ich gerne auch dein Vorhaben. Lass uns sprechen!",
-  "problemContact":"Benötigen Sie einen Frontend-Entwickler? Sprechen Sie mich an!",
+  "problemContact": "Benötigen Sie einen Frontend-Entwickler?",
+  "letConnect": "Sprechen Sie mich an!",
   "name": "Wie heißen Sie?",
   "email": "Wie lautet Ihre E-Mail?",
   "help": "Wie kann ich Ihnen helfen?",
-  "privacyPolicy": "Mit dem Absenden erkläre ich mich mit der Verarbeitung meiner personenbezogenen Daten gemäß der Datenschutzerklärung einverstanden."
+  "privacyPolicy": "Mit dem Absenden erkläre ich mich mit der Verarbeitung meiner personenbezogenen Daten gemäß der <a class='test' href=''>Datenschutzerklärung</a> einverstanden.",
+  "acceptPrivacyPolicy" : "Bitte akzeptieren Sie die Datenschutzerklärung.",
+  "nameError": "Ups! Ihr Name scheint zu fehlen oder zu kurz zu sein",
+  "emailError": "Hoppla! Ihre E-Mail ist erforderlich",
+  "messageError": "Was müssen Sie entwickeln?",
+  "placeholderName" : "Ihr Name kommt hier",
+  "placeholderEmail" : "deinmail@email.com",
+  "placeholderMessage" : "Hallo Mihael, Ich habe interesse an...",
+  "sayHello": "Sag Hallo",
+  "projects": {
+    "join": {
+      "description": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu."
+    },
+    "elPolloLoco": {
+      "description": "Ein 2D-Jump-and-Run-Spiel mit objektorientierter Architektur. Hilf Pepe, Münzen und Tabasco zu sammeln, um gegen das verrückte Huhn zu kämpfen."
+    },
+    "daBubble": {
+      "description": "Eine Slack-ähnliche App zur Verbesserung der Teamkommunikation mit intuitiver Oberfläche, Echtzeit-Nachrichten und klarer Kanalstruktur."
+    }
+  },
+  "testimonials": {
+    "1": {
+      "quote": "„Mihael hat sich als zuverlässiger Teamkollege erwiesen. Seine technischen Fähigkeiten und sein proaktives Handeln waren entscheidend für den Erfolg unseres Projekts.“"
+    },
+    "2": {
+      "quote": "„Die effiziente Arbeitsweise von Mihael war ein großer Gewinn für unser Projekt.“"
+    },
+    "3": {
+      "quote": "„Ich hatte das Glück, mit Mihael an einem Gruppenprojekt bei der Developer Akademie zusammenzuarbeiten, das viel Einsatz erforderte …“"
+    }
+  }
 }

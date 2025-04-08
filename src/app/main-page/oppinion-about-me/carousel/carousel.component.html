@@ -5,7 +5,7 @@
       <div class="carousel-item" *ngFor="let t of testimonials; let i = index" [class.active]="i === currentIndex"
         [class.prev]="i === currentIndex - 1" [class.next]="i === currentIndex + 1">
         <div>
-          <p>“{{ t.quote }}”</p>
+          <p>“{{ t.quote | translate }}”</p>
           <div class="author">
             <span class="line"></span>
             <div>

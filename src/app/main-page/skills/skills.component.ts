@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ImagesCardComponent } from "./images-card/images-card.component";
 import { NgFor } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [ImagesCardComponent, NgFor],
+  imports: [ImagesCardComponent, NgFor, TranslateModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })

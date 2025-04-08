@@ -1,25 +1,23 @@
 <div class="content" id="skills">
     <div>
         <div class="title">
-            <h1>Technologies</h1>
+            <h1>{{"technologies" | translate }}</h1>
         </div>
         <div class="skill-container">
             <div>
-                <h1>Skill Set</h1>
+                <h1>{{"skillSet" | translate }}</h1>
             </div>
             <div>
-                <p>A short introduction of your skills. Highlight your experience of using different front-end
-                    technologies and emphasise your openness to learning and adapting to new technologies. Show how
-                    important it is for you to keep up with the rapid changes in web development.</p>
+                <p>{{"skillSetDescription" | translate }}</p>
             </div>
             <div class="contact-me">
-                <h2>You need <span>another skill?</span></h2>
+                <h2>{{"youNeed" | translate }} <span>{{"anotherSkill" | translate }}</span> </h2>
             </div>
             <div>
-                <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+                <p>{{"needAnotherSkillText" | translate }}</p>
             </div>
             <div class="buttons-container">
-                    <a class="btn-outline" href="#contact-me"><span class="slide-text">Lets Talk</span></a>
+                    <a class="btn-outline" href="#contact-me"><span class="slide-text">{{"letsTalk" | translate }}</span></a>
             </div>
         </div>
     </div>
@@ -29,7 +27,7 @@
         </app-images-card>
         <div class="icons">
             <div class="tech-card">
-                <p>I have a special<br>interest in learning</p>
+                <p [innerHTML]="'specialInterest' | translate"></p>
               
                 <div class="tech-icons">
                   <div class="tech-item">
