@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { GlobalDataService } from '../../global-data.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -32,7 +33,11 @@ export class HeaderComponent {
   ];
 
   toggleLanguage() {
-    this.globalData.currentLang = this.globalData.currentLang === 'en' ? 'de' : 'en';
+    this.globalData.switchLanguage();
+  }
+  
+  isLang(lang: string): boolean {
+    return this.globalData.currentLang === lang;
   }
 
 }

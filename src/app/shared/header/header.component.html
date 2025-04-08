@@ -1,24 +1,24 @@
 <div class="header">
     <div class="buttons">
-        <div>
-            <div class="language-switch" [ngClass]="{ 'active-de': globalData.currentLang === 'de' }" (click)="toggleLanguage()">
-                <div class="toggle-bg"></div>
-                <div class="lang en" [ngClass]="{ 'active': globalData.currentLang === 'en' }">EN</div>
-                <div class="lang de" [ngClass]="{ 'active': globalData.currentLang === 'de' }">DE</div>
-            </div>
+      <div>
+        <div class="language-switch" [ngClass]="{ 'active-de': isLang('de') }" (click)="toggleLanguage()">
+          <div class="toggle-bg"></div>
+          <div class="lang en" [ngClass]="{ 'active': isLang('en') }">EN</div>
+          <div class="lang de" [ngClass]="{ 'active': isLang('de') }">DE</div>
         </div>
-        <div class="links">
-            <a
-            *ngFor="let link of links; let i = index"
-            (mouseenter)="hoveredIndex = i"
-            (mouseleave)="hoveredIndex = null"
-            [href]="link.href"
-          >
+      </div>
+      <div class="links">
+        <a
+          *ngFor="let link of links; let i = index"
+          (mouseenter)="hoveredIndex = i"
+          (mouseleave)="hoveredIndex = null"
+          [href]="link.href"
+        >
           <span [ngClass]="{ 'dot-visible': hoveredIndex === i }" class="dot"></span>
-          {{ link.label }}
-          </a>
-        </div>
+          {{ link.label | translate }}
+        </a>
+      </div>
     </div>
     <div class="logo">
     </div>
-</div>
+  </div>

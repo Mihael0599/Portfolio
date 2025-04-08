@@ -21,7 +21,6 @@ export class ProjectModalComponent {
 
   @Input() selectedIndex: number | null = null;
   @Input() selectedProject: any = null;
-  @Input() projectData: any[] = [];
 
   @Output() close = new EventEmitter<void>();
 
