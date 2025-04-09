@@ -21,6 +21,6 @@
       </div>
     </div>
   </div>
-  <app-project-modal class="dialog" *ngIf="showModal" [selectedIndex]="selectedIndex" [selectedProject]="selectedProject" (close)="closeModal()">
+  <app-project-modal class="dialog" *ngIf="showModal" [selectedIndex]="selectedIndex" [selectedProject]="selectedProject"  [projects]="projectData" (close)="closeModal()">
   </app-project-modal>
 </div>

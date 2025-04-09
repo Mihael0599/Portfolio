@@ -22,6 +22,7 @@ export class ProjectModalComponent {
 
   @Input() selectedIndex: number | null = null;
   @Input() selectedProject: any = null;
+  @Input() projects: any[] = [];
 
   @Output() close = new EventEmitter<void>();
 
@@ -31,6 +32,13 @@ export class ProjectModalComponent {
 
   onClose() {
     this.close.emit();
+  }
+
+  nextProject() {
+    if (this.projects && this.projects.length > 0 && this.selectedIndex !== null) {
+      this.selectedIndex = (this.selectedIndex + 1) % this.projects.length;
+      this.selectedProject = this.projects[this.selectedIndex];
+    }
   }
   
 }

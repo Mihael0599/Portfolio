@@ -57,4 +57,13 @@ export class CarouselComponent implements AfterViewInit {
 
     scrollToIndex(this.currentIndex);
   }
+
+  items = [1, 2, 3, 4, 5];
+
+  rotateRight() {
+    const first = this.items.shift();
+    if (first !== undefined) {
+      this.items.push(first);
+    }
+  }
 }
