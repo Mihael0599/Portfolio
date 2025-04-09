@@ -64,8 +64,9 @@
     font-family: 'Karla';
     position: relative;
     bottom: 100px;
-    &:hover{
-        >a{
+
+    &:hover {
+        >a {
             color: #3DCFB6;
             cursor: pointer;
         }
@@ -85,7 +86,7 @@
 .arrow-down {
     width: 30px;
     height: 48px;
-    border:  1px solid #3DCFB6;
+    border: 1px solid #3DCFB6;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -95,41 +96,59 @@
     position: relative;
 }
 
-.github-container, .linkedin-container{
+.email-container {
+    display: none !important;
+}
+
+.github-container,
+.linkedin-container,
+.email-container {
     @include dFlex();
     position: relative;
-    >span{
-        font-size: 26px;   
+
+    >span {
+        font-size: 26px;
         color: #3DCFB6;
         position: absolute;
         top: 2px;
-        right: -10px; 
+        right: -10px;
         display: none;
     }
 }
 
-.github-container:hover, .linkedin-container:hover{
-    >a{
+.github-container:hover,
+.linkedin-container:hover,
+.email-container:hover {
+    >a {
         display: none;
     }
-    .github-hover{
+
+    .github-hover {
         display: block;
     }
-    .dot{
+
+    .dot {
         display: block
     }
-    .linkedin-hover{
+
+    .linkedin-hover {
+        display: block
+    }
+
+    .email-hover {
         display: block
     }
 }
 
-.social{
+.social {
     @include dFlex();
     flex-direction: column;
     width: 60px;
 }
 
-.github-hover, .linkedin-hover{
+.github-hover,
+.linkedin-hover,
+.email-hover {
     display: none;
 }
 
@@ -142,7 +161,7 @@
 
     50% {
         top: 10px;
-        
+
     }
 }
 
@@ -159,38 +178,104 @@
     transition: border 0.3s, color 0.3s;
     overflow: hidden;
     position: relative;
-  }
-  
-  .btn-outline:hover {
+}
+
+.btn-outline:hover {
     border: 1px solid #3DCFB6;
     color: #3DCFB6;
-  }
-  
-  .slide-text {
+}
+
+.slide-text {
     display: inline-block;
     transition: transform 3s ease;
-  }
-  
-  .btn-outline:hover .slide-text {
+}
+
+.btn-outline:hover .slide-text {
     animation: slide-reset 3s ease-in-out infinite;
-  }
-  
-  @keyframes slide-reset {
+}
+
+@keyframes slide-reset {
     0% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
+
     49% {
-      transform: translateX(-100%);
-      opacity: 0;
+        transform: translateX(-100%);
+        opacity: 0;
     }
+
     50% {
-      transform: translateX(100%);
-      opacity: 0;
+        transform: translateX(100%);
+        opacity: 0;
     }
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
-  
+}
+
+@media (max-width: 1090px) {
+    .email {
+        display: none;
+    }
+
+    .email-container {
+        display: block !important;
+    }
+
+    .line-left-container {
+        left: 16px;
+    }
+
+    .line-right-container {
+        right: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        h2 {
+            font-size: 32px;
+        }
+    }
+    .name{
+        h1{
+            font-size: 84px;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .title {
+        h2 {
+            font-size: 24px;
+        }
+    }
+    .name{
+        h1{
+            font-size: 62px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .buttons-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width:420px){
+    .title {
+        h2 {
+            font-size: 18px;
+        }
+    }
+    .name{
+        h1{
+            font-size: 42px;
+        }
+    }
+}

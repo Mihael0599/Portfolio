@@ -1,0 +1,123 @@
+@import './../../../../styles.scss';
+
+
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.burger-menu {
+  padding-right: 16px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+.bar1 {
+  top: 0;
+}
+
+.bar2,
+.bar3 {
+  top: 13.5px;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+
+label {
+  padding-right: 16px;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar1 {
+  transform: rotate(45deg);
+  transform-origin: 5%;
+  width: 41px
+}
+
+.checkbox1:checked+label>.hamburger1>.bar2 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar3 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar4 {
+  transform-origin: 5%;
+  transform: rotate(-45deg);
+  width: 41px;
+}
+
+.mobile-menu {
+  position: absolute;
+  border: 1px solid #3DCFB6;
+  /* display: none; */
+  top: 100px;
+  z-index: 1000;
+  right: 100px;
+  border-radius: 30px;
+  background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+  height: 252px;
+  width: 238px;
+  @include dFlex();
+  flex-direction: column;
+  gap: 24px;
+  transform: translateX(150%); // versteckt rechts
+  transition: transform 0.3s ease-in-out;
+  opacity: 0;
+}
+
+a {
+  font-size: 18px;
+  font-family: 'Fira Code';
+}
+
+.switch-lang {
+  height: 28px;
+  width: 84px;
+}
+
+.mobile-menu.open {
+  /* display: block; */
+  transform: translateX(30%);
+  opacity: 1;
+}

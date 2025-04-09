@@ -1,0 +1,5 @@
+<div class="language-switch" [ngClass]="{ 'active-de': isLang('de') }" (click)="toggleLanguage()">
+    <div class="toggle-bg"></div>
+    <div class="lang en" [ngClass]="{ 'active': isLang('en') }">EN</div>
+    <div class="lang de" [ngClass]="{ 'active': isLang('de') }">DE</div>
+  </div>

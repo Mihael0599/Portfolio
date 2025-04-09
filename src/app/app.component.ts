@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import AOS from 'aos';
 
 
 @Component({
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit {
     const defaultLanguage = localStorage.getItem('language') || 'en';
     this.translateService.setDefaultLang(defaultLanguage);
     this.translateService.use(defaultLanguage);
+    /* AOS.init(); */
   }
 
   changeLanguage(lang: string){

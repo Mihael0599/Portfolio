@@ -1,0 +1,25 @@
+import { Component, EventEmitter, Output } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageSwitchComponent } from "../language-switch/language-switch.component";
+
+@Component({
+  selector: 'app-burgermenu',
+  standalone: true,
+  imports: [TranslateModule, LanguageSwitchComponent],
+  templateUrl: './burgermenu.component.html',
+  styleUrl: './burgermenu.component.scss'
+})
+export class BurgermenuComponent {
+
+  active = false;
+
+  toggleMenu() {
+    this.active = !this.active;
+
+    if (this.active) {
+      document.body.style.overflowX = ''
+    }else{
+      document.body.style.overflowX = 'hidden';
+    }
+  }
+}

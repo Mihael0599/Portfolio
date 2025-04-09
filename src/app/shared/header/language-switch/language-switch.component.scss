@@ -1,0 +1,52 @@
+.language-switch {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: #2b2b2b;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    cursor: pointer;
+    border: 2px solid white;
+  
+    .toggle-bg {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #33d6c2;
+      border-radius: 100px;
+      transition: left 0.3s ease;
+      z-index: 0;
+    }
+  
+    &.active-de .toggle-bg {
+      left: 50%;
+    }
+  
+    >.lang {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      text-align: center;
+      font-family: 'Fira Code', sans-serif;
+      font-weight: 400;
+      color: rgba(61, 207, 182, 1);
+      transition: color 0.3s ease;
+    }
+  
+    >.lang.active {
+      color: white;
+  
+    }
+  }
+
+  @media(max-width: 991px){
+    .language-switch{
+        width: 84px;
+        height: 24px;
+    }
+  }
