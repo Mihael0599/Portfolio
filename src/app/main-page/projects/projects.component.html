@@ -1,17 +1,13 @@
-<!-- data-aos="flip-up" data-aos-duration="1000" data-aos-anchor-placement="center-center" -->
 <div class="content" id="projects">
     <div>
-        <div>
-            <h2>Portfolio</h2>
-        </div>
-        <div>
-            <h1>{{"featuredProjects" | translate }}</h1>
-        </div>
-        <div>
-            <p [innerHTML]="'featuredProjectsText' | translate"></p>
-        </div>
-        <div>
-            <app-project-card></app-project-card>
-        </div>
+        <h2>Portfolio</h2>
+        <h1>{{ "featuredProjects" | translate }}</h1>
+        <p [innerHTML]="'featuredProjectsText' | translate"></p>
+
+        <app-project-card [projects]="projects" (open)="openModal($event)">
+        </app-project-card>
     </div>
+    <app-project-modal class="dialog" *ngIf="showModal" [selectedIndex]="selectedIndex"
+[selectedProject]="selectedProject" [projects]="projects" (close)="closeModal()">
+</app-project-modal>
 </div>

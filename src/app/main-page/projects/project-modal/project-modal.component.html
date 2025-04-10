@@ -1,38 +1,41 @@
-<div class="pop-up">
-  <div class="modal-content" *ngIf="selectedProject">
-    <div class="projekt-number">
-      <h1 *ngIf="selectedIndex !== null">
-        {{ (selectedIndex + 1) | number: '2.0' }}
-      </h1>
-      <h2>{{ selectedProject.projectName }}</h2>
-    </div>
-    <div class="description">
-      <h3>{{"aboutProject" | translate }}</h3>
-      <p>{{ selectedProject.description | translate }}</p>
-    </div>
-    <div class="skills" *ngIf="selectedProject">
-      <div *ngFor="let skill of selectedProject.skills">
-        <img [src]="getSkillIcon(skill)" [alt]="skill">
-        <span>{{ skill }}</span>
+
+<div class="pop-up-container">
+  <div class="pop-up">
+    <div class="modal-content" *ngIf="selectedProject">
+      <div class="projekt-number">
+        <h1 *ngIf="selectedIndex !== null">
+          {{ (selectedIndex + 1) | number: '2.0' }}
+        </h1>
+        <h2>{{ selectedProject.projectName }}</h2>
+      </div>
+      <div class="description">
+        <h3>{{"aboutProject" | translate }}</h3>
+        <p>{{ selectedProject.description | translate }}</p>
+      </div>
+      <div class="skills" *ngIf="selectedProject">
+        <div *ngFor="let skill of selectedProject.skills">
+          <img [src]="getSkillIcon(skill)" [alt]="skill">
+          <span>{{ skill }}</span>
+        </div>
+      </div>
+      <div class="links">
+        <div>
+          <a class="btn-outline" target="_blank" [href]="selectedProject.githubLink">GitHub <img src="assets/img/arrow_outward-color.png" alt=""></a>
+        </div>
+        <div>
+          <a class="btn-outline" target="_blank" [href]="selectedProject.liveTestLink">Live Test <img src="assets/img/arrow_outward-color.png" alt=""></a>
+        </div>
       </div>
     </div>
-    <div class="links">
-      <div>
-        <a class="btn-outline" href="">GitHub <img src="assets/img/arrow_outward-color.png" alt=""></a>
-      </div>
-      <div>
-        <a class="btn-outline" href="">Live Test <img src="assets/img/arrow_outward-color.png" alt=""></a>
-      </div>
+    <div class="project-img">
+      <img [src]="selectedProject.imageModal">
     </div>
-  </div>
-  <div class="project-img">
-    <img [src]="selectedProject.imageURL">
-  </div>
-  <div class="close-button-container">
-    <button class="close-btn" (click)="onClose()"></button>
-  </div>
-  <div class="btn-next">
-    <button (click)="nextProject()">{{"nextProject" | translate }}</button>
-    <img src="assets/img/arrow-right-color.png" alt="">
+    <div class="close-button-container">
+      <button class="close-btn" (click)="onClose()"></button>
+    </div>
+    <div class="btn-next">
+      <button (click)="nextProject()">{{"nextProject" | translate }}</button>
+      <img src="assets/img/arrow-right-color.png" alt="">
+    </div>
   </div>
 </div>

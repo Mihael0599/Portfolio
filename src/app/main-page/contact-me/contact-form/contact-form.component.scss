@@ -17,6 +17,7 @@ span{
 form {
     @include dFlex(center, flex-start);
     flex-direction: column;
+    max-width: 616px;
 }
 
 .check-box-container {

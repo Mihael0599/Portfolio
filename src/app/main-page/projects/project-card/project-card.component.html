@@ -1,6 +1,6 @@
 <div class="content">
   <div>
-    <div *ngFor="let project of projectData; let i = index" class="project" (mouseenter)="onMouseEnter(project)"
+    <div *ngFor="let project of projects; let i = index" class="project" (mouseenter)="onMouseEnter(project)"
       (mouseleave)="onMouseLeave()" (click)="openModal(i)">
       <div class="project-name">
         <h3>{{ project.projectName }}</h3>
@@ -21,6 +21,4 @@
       </div>
     </div>
   </div>
-  <app-project-modal class="dialog" *ngIf="showModal" [selectedIndex]="selectedIndex" [selectedProject]="selectedProject"  [projects]="projectData" (close)="closeModal()">
-  </app-project-modal>
 </div>

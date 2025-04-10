@@ -77,16 +77,99 @@
 }
 
 @media (max-width: 1560px){
-    .myimg{
-        height: 480px;
-        width: 380px;
-    }
     .description-container{
+        max-width: 568px;
         width: 100%;
         height: 634px;
     }
     .content{
         justify-content: space-between;
         gap: 30px;
+    }
+}
+
+@media (max-width:1360px){
+    .myimg{
+        height: 100%;
+        max-width: 568px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1220px){
+    .description-container{
+        height: 100%;
+    }
+    h1{
+        font-size: 56px !important;
+        padding-bottom: 20px !important;
+        padding-top: 16px !important;
+    }
+    .title{
+        h1{
+            font-size: 24px !important;
+            padding-bottom: 0 !important;
+            padding-top: 0 !important;
+        }
+    }   
+}
+
+@media (max-width: 1030px){
+    p{
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 905px){
+    .content{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .about-me{
+        padding-right: 96px;
+        padding-left: 32px;
+    }
+}
+
+@media (max-width: 500px){
+.myimg{
+    height: 358px;
+}
+.cards-container{
+    padding-top: 0;
+}
+
+h1{
+    font-size: 48px !important;
+}
+}
+
+@media (max-width: 440px){
+    .cards{
+        flex-direction: column;
+        gap: 12px !important;
+    }
+    h1{
+        font-size: 32px !important;
+    }
+    .title{
+        h1{
+            font-size: 18px !important;
+        }
+    }
+}
+
+@media (max-width: 385px){
+    .about-me{
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    .description-container{
+        width: 70%;
     }
 }

@@ -89,6 +89,12 @@
   display: none;
 }
 
+@media (max-height: 1000px){
+  .header{
+    background: linear-gradient(165deg, #1C1C1C 36.26%, #08463B 93.28%);
+  }
+}
+
 @media (max-width: 991px){
   .logo{
     display: none;
