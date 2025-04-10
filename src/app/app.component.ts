@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     const defaultLanguage = localStorage.getItem('language') || 'en';
     this.translateService.setDefaultLang(defaultLanguage);
     this.translateService.use(defaultLanguage);
-    /* AOS.init(); */
+    AOS.init({disable: 'mobile'});
   }
 
   changeLanguage(lang: string){

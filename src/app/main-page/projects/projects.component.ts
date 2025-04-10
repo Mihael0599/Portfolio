@@ -13,9 +13,33 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 })
 export class ProjectsComponent {
   projects = [
-    { projectName: 'Pokedex', skills: ['React', 'TypeScript', 'API'], imageURL: 'assets/img/dabubble.png', imageModal: 'assets/img/join-modulo.png', description: 'projects.daBubble.description', githubLink: 'https://github.com/Mihael0599/Pokedex-with-React',liveTestLink: 'https://mihael-drazic.de/Join/' },
-    { projectName: 'Join', skills: ['JavaScript', 'HTML', 'CSS', 'Firebase'], imageURL: 'assets/img/join.png', imageModal: 'assets/img/join-modal.png', description: 'projects.join.description',githubLink: 'https://github.com/Mihael0599/Join', liveTestLink: 'https://mihael-drazic.de/Join/' },
-    { projectName: 'El Pollo Loco', skills: ['HTML', 'CSS', 'JavaScript'], imageURL: 'assets/img/elpolloloco.png', imageModal: 'assets/img/elpolloloco-modal.png', description: 'projects.elPolloLoco.description', githubLink: 'https://github.com/Mihael0599/El-Pollo-Loco', liveTestLink: 'https://mihael-drazic.de/ElPolloLoco/'},
+    {
+      projectName: 'Pokedex',
+      skills: ['React', 'TypeScript', 'API'],
+      imageURL: 'assets/img/dabubble.png',
+      imageModal: 'assets/img/join-modulo.png',
+      description: 'projects.daBubble.description',
+      githubLink: 'https://github.com/Mihael0599/Pokedex-with-React',
+      liveTestLink: 'https://mihael-drazic.de/Pokedex/'
+    },
+    {
+      projectName: 'Join',
+      skills: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
+      imageURL: 'assets/img/join.png',
+      imageModal: 'assets/img/join-modal.png',
+      description: 'projects.join.description',
+      githubLink: 'https://github.com/Mihael0599/Join',
+      liveTestLink: 'https://mihael-drazic.de/Join/'
+    },
+    {
+      projectName: 'El Pollo Loco',
+      skills: ['HTML', 'CSS', 'JavaScript'],
+      imageURL: 'assets/img/elpolloloco.png',
+      imageModal: 'assets/img/elpolloloco-modal.png',
+      description: 'projects.elPolloLoco.description',
+      githubLink: 'https://github.com/Mihael0599/El-Pollo-Loco',
+      liveTestLink: 'https://mihael-drazic.de/ElPolloLoco/'
+    },
   ];
 
   selectedIndex: number | null = null;

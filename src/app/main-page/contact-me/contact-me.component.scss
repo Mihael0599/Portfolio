@@ -55,3 +55,67 @@ p {
 .work-description{
     padding-top: 16px;
 }
+
+@media (max-width: 1220px){
+    .container-left{
+        width: 100% !important;
+        padding-left: 32px;
+    }
+    .contat-form{
+        padding-right: 32px;
+    }
+
+    .contact-me-container{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1050px){
+    h1{
+        font-size: 54px;
+    }
+    h2{
+       font-size: 18px; 
+    }
+}
+
+@media(max-width: 991px){
+    .contact-me-container{
+        flex-direction: column;
+        width: 568px;
+    }
+    .container-left{
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 650px){
+    .contact-me-container{
+        width: 100%;
+    }
+    .container-left{
+        >div{
+            padding-right:  16px !important;
+            padding-left:  16px !important;
+        }
+    }
+    .title{
+        padding-bottom: 32px;
+    }
+    .work-description{
+        padding-bottom: 64px;
+    }
+    .contat-form{
+        padding: 0 16px !important;
+    }
+}
+
+@media (max-width: 490px){
+    h1{
+        font-size: 38px !important;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+}
