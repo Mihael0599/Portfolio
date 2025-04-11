@@ -24,11 +24,12 @@ form {
 .check-box-container {
     padding-top: 40px;
     position: relative;
-    @include dFlex();
+    @include dFlex(center, flex-start);
+    flex-direction: column;
     gap: 10px;
     >span{
         position: absolute;
-        top: 90px;
+        top: 100px;
         left: -5px
     };
 }
@@ -148,3 +149,9 @@ a.test {
       min-width: 100%;
     }
   }
+
+  .checkbox-text{
+    @include dFlex();
+    gap: 10px;
+  }
+

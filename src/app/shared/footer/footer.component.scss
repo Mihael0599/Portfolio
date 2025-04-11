@@ -82,3 +82,15 @@
   .dot-visible {
     opacity: 1;
   }
+
+  @media(max-width: 730px){
+    .logo-container{
+        padding-left: 16px;
+        >img{
+            left: -25px;
+        }
+    }
+    .links{
+        padding-right: 16px;
+    }
+  }

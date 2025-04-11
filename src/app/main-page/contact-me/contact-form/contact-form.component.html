@@ -1,34 +1,44 @@
 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="input-container border-top">
         <label for="name">{{"name" | translate }}</label>
-        <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" id="name" name="name" type="text" [placeholder]="'placeholderName' | translate" required>
+        <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" id="name" name="name" type="text"
+            [placeholder]="'placeholderName' | translate" required>
         @if (!name.valid && name.touched && !name.disabled) {
-            <span>{{"nameError" | translate}}</span>
+        <span>{{"nameError" | translate}}</span>
         }
     </div>
     <div class="input-container">
         <label for="email">{{"email" | translate }}</label>
-        <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" type="email" [placeholder]="'placeholderEmail' | translate" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+        <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email" type="email"
+            [placeholder]="'placeholderEmail' | translate" required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
         @if (!email.valid && email.touched && !email.disabled) {
-            <span>{{"emailError" | translate }}</span>
+        <span>{{"emailError" | translate }}</span>
         }
     </div>
     <div class="input-container">
         <label for="message">{{"help" | translate }}</label>
-        <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="5" id="message" name="message" type="text" [placeholder]="'placeholderMessage' | translate" required></textarea>
-      @if (!message.valid && message.touched && !message.disabled) {
+        <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="5" id="message" name="message"
+            type="text" [placeholder]="'placeholderMessage' | translate" required></textarea>
+        @if (!message.valid && message.touched && !message.disabled) {
         <span>{{"messageError" | translate }}</span>
-      }
+        }
     </div>
     <div class="check-box-container">
-        <input #privacy="ngModel" [(ngModel)]="privacyAccepted" name="privacy" id="checkBox" class="checkbox" type="checkbox" required>
-        <p [innerHTML]="'privacyPolicy' | translate"></p>
-        @if (!privacy.valid && privacy.touched) {
+        <div class="checkbox-text">
+            <input #privacy="ngModel" [(ngModel)]="privacyAccepted" name="privacy" id="checkBox" class="checkbox"
+                type="checkbox" required>
+            <p [innerHTML]="'privacyPolicy' | translate"></p>
+        </div>
+        <div class="error-message">
+            @if (!privacy.valid && privacy.touched) {
             <span>{{"acceptPrivacyPolicy" | translate }}</span>
-        }
+            }
+        </div>
     </div>
 
     <div class="button-container">
-        <button [disabled]="!contactForm.form.valid && !privacyAccepted" id="Submit">{{"sayHello" | translate }} ;&#41;</button>
+        <button [disabled]="!contactForm.form.valid || !privacyAccepted || contactForm.form.pristine"
+            id="Submit">{{"sayHello" | translate }} ;&#41;</button>
     </div>
 </form>

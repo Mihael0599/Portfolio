@@ -60,4 +60,8 @@ export class ContactFormComponent {
     }
   }
 
+  isSubmitDisabled(form: NgForm) {
+    return !form.valid || !this.privacyAccepted || form.pristine;
+  }
+
 }

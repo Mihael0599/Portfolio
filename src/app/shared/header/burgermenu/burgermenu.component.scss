@@ -88,11 +88,11 @@ label {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   border: 1px solid #3DCFB6;
   top: 100px;
   z-index: 1000;
-  right: 100px;
+  right: 0px;
   border-radius: 30px;
   background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
   height: 252px;
@@ -116,6 +116,6 @@ a {
 }
 
 .mobile-menu.open {
-  transform: translateX(30%);
+  transform: translateX(0%);
   opacity: 1;
 }

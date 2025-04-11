@@ -14,17 +14,17 @@ export class CarouselComponent implements AfterViewInit {
 
   testimonials = [
     {
-      author: "T. Schulz",
-      role: "Frontend Developer",
+      author: "M. Salman",
+      role: "Team Partner",
       quote: "testimonials.1.quote"
     },
     {
-      author: "H. Janisch",
+      author: "A. Römmich",
       role: "Team Partner",
       quote: "testimonials.2.quote"
     },
     {
-      author: "A. Fischer",
+      author: "M. Schweiger",
       role: "Team Partner",
       quote: "testimonials.3.quote"
     },

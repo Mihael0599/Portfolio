@@ -15,7 +15,7 @@ export class ProjectsComponent {
   projects = [
     {
       projectName: 'Pokedex',
-      skills: ['React', 'TypeScript', 'API'],
+      skills: ['JavaScript', 'CSS', 'HTML'],
       imageURL: 'assets/img/dabubble.png',
       imageModal: 'assets/img/join-modulo.png',
       description: 'projects.daBubble.description',
