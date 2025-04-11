@@ -57,8 +57,4 @@ export class CarouselComponent implements AfterViewInit {
 
     scrollToIndex(this.currentIndex);
   }
-
-   handleResize(): void {
-    console.log('Fenstergröße geändert:', window.innerWidth, window.innerHeight);
-  }
 }

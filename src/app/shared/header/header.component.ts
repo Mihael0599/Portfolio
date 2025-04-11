@@ -1,9 +1,10 @@
-import { CommonModule } from '@angular/common';
+import { APP_BASE_HREF, CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { GlobalDataService } from '../../global-data.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { BurgermenuComponent } from './burgermenu/burgermenu.component';
 import { LanguageSwitchComponent } from "./language-switch/language-switch.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -15,9 +16,11 @@ import { LanguageSwitchComponent } from "./language-switch/language-switch.compo
 export class HeaderComponent {
 
   active = false;
+  currentRoute: string | undefined;
 
   changeLogo: boolean = false;
   hoveredIndex: number | null = null;
+  ishovered: boolean = false;
 
   links = [
     {
@@ -36,6 +39,16 @@ export class HeaderComponent {
 
   toggleMenu() {
     this.active = !this.active;
+  }
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(() => {
+      this.currentRoute = this.router.url;
+    });
+  }
+
+  isAnotherPage(): boolean{
+    return this.currentRoute ==='/imprint' || this.currentRoute === '/privacyPolicy'
   }
 
 }

@@ -28,7 +28,7 @@ export class FooterComponent {
     },
     {
       label: 'Legal Notice',
-      href: '',
+      href: 'imprint',
     }
   ];
 }

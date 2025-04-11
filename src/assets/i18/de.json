@@ -35,14 +35,14 @@
   "name": "Wie heißen Sie?",
   "email": "Wie lautet Ihre E-Mail?",
   "help": "Wie kann ich Ihnen helfen?",
-  "privacyPolicy": "Mit dem Absenden erkläre ich mich mit der Verarbeitung meiner personenbezogenen Daten gemäß der <a class='test' href=''>Datenschutzerklärung</a> einverstanden.",
-  "acceptPrivacyPolicy" : "Bitte akzeptieren Sie die Datenschutzerklärung.",
+  "privacyPolicy": "Mit dem Absenden erkläre ich mich mit der Verarbeitung meiner personenbezogenen Daten gemäß der <a class='test' href='privacyPolicy'>Datenschutzerklärung</a> einverstanden.",
+  "acceptPrivacyPolicy": "Bitte akzeptieren Sie die Datenschutzerklärung.",
   "nameError": "Ups! Ihr Name scheint zu fehlen oder zu kurz zu sein",
   "emailError": "Hoppla! Ihre E-Mail ist erforderlich",
   "messageError": "Was müssen Sie entwickeln?",
-  "placeholderName" : "Ihr Name kommt hier",
-  "placeholderEmail" : "deinmail@email.com",
-  "placeholderMessage" : "Hallo Mihael, Ich habe interesse an...",
+  "placeholderName": "Ihr Name kommt hier",
+  "placeholderEmail": "deinmail@email.com",
+  "placeholderMessage": "Hallo Mihael, Ich habe interesse an...",
   "sayHello": "Sag Hallo",
   "nextProject": "Nächstes Projekt",
   "projects": {
@@ -66,5 +66,77 @@
     "3": {
       "quote": "„Ich hatte das Glück, mit Mihael an einem Gruppenprojekt bei der Developer Akademie zusammenzuarbeiten, das viel Einsatz erforderte …“"
     }
+  },
+  "privacy": {
+    "headline": "Ihre Datenschutzerklärung",
+    "general": {
+      "title": "Allgemeine Angaben",
+      "responsible": "Angaben zur verantwortlichen Stelle",
+      "company": "Unternehmen: Mihael Drazic",
+      "address": "Adresse: Hohenbergstraße 2, 78549 Spaichingen"
+    },
+    "dataProcessing": {
+      "title": "Allgemeine Datenverarbeitungs-Informationen",
+      "collection": "Personenbezogene Daten werden nur erhoben, wenn Sie uns diese von sich aus mitteilen. Darüber hinaus werden keine personenbezogenen Daten erhoben...",
+      "purpose": "Verarbeitungszweck: (in der Regel) Vertragsanbahnung bzw. -durchführung.",
+      "recipients": "Kategorien von Empfängern: Öffentliche Stellen bei Vorliegen vorrangiger Rechtsvorschriften. Externe Dienstleister oder sonstige Auftragnehmer...",
+      "thirdCountry": "Drittlandtransfers: Im Rahmen der Vertragsdurchführung können auch Auftragsverarbeiter außerhalb der Europäischen Union zum Einsatz kommen.",
+      "storage": "Dauer Datenspeicherung: Die Dauer der Datenspeicherung richtet sich nach den gesetzlichen Aufbewahrungspflichten und beträgt in der Regel 10 Jahre."
+    },
+    "websiteSpecific": {
+      "title": "Spezifische Angaben zur Webseite",
+      "note": "-"
+    },
+    "usageData": {
+      "title": "Nutzungsdaten",
+      "description": "Wenn Sie unsere Webseiten aufrufen, übermitteln Sie (aus technischer Notwendigkeit) über Ihren Internetbrowser Daten an unseren Webserver...",
+      "points": [
+        "Datum und Uhrzeit der Anforderung",
+        "Name der angeforderten Daten",
+        "Seite, von der aus die Datei angefordert wurde",
+        "Zugriffsstatus (Datei übertragen, Datei nicht gefunden, etc.)",
+        "verwendeter Webbrowser und verwendetes Betriebssystem",
+        "vollständige IP-Adresse des anfordernden Rechners",
+        "übertragene Datenmenge"
+      ],
+      "security": "Aus Gründen der technischen Sicherheit... Ein Abgleich mit anderen Daten oder eine Weitergabe an Dritte findet nicht statt."
+    },
+    "cookies": {
+      "title": "Einsatz eigener für die Webseiten-Anzeige erforderlicher \"Cookies\"",
+      "description": "Diese Webseite verwendet eigene \"Cookies\", um für die Webseiten-Anzeige erforderliche Einstellungen zu speichern..."
+    },
+    "contacts": {
+      "title": "Weitere Informationen und Kontakte",
+      "description": "Darüber hinaus können Sie jederzeit ihre Ansprüche auf Auskunft, Berichtigung oder Löschung... kontaktieren."
+    },
+    "generatorNote": "Diese Datenschutzerklärung wurde vom Datenschutz-Generator der IITR Datenschutz GmbH erstellt."
+  },
+  "imprint": {
+    "title": "Impressum",
+    "responsible": {
+      "title": "Verantwortlich",
+      "name": "Mihael Drazic, Frontend-Entwickler"
+    },
+    "address": {
+      "title": "Adresse",
+      "details": "Hohenbergstraße 2, 78549 Spaichingen, Deutschland"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "E-Mail: mihaeldraz10@gmail.com",
+      "phone": "Telefon: +49 162 3275872"
+    },
+    "website": {
+      "title": "Website-Informationen",
+      "copyright": "Urheberrecht",
+      "copyrightNote": "Alle Inhalte dieser Webseite sind urheberrechtlich geschützt.",
+      "editorial": "Redaktionelle Verantwortung",
+      "editorialNote": "Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV: Max Mustermann"
+    },
+    "vsbg": {
+      "title": "Verbraucherstreitbeilegung",
+      "text2": "Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    },
+    "generatedNote": "Dieses Impressum wurde mit Hilfe des <a class='test' href='https://www.activemind.de/generatoren/impressum/' target='_blank'>Impressums-Generators der activeMind AG</a> erstellt (Version 2024-07-05)."
   }
 }

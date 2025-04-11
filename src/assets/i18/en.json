@@ -27,22 +27,22 @@
   "aboutProject": "What is this project about?",
   "oppinionAboutMe": "What my colleagues say about me",
   "letsWork": "Let’s work",
-  "together" : "together",
+  "together": "together",
   "problemSlove": "Got a problem to solve?",
   "problemDescription": "I’m looking for projects where I can contribute as a frontend developer – remotely or as part of a team. With my structured and solution-oriented approach, I’d love to support your next idea. Let’s talk!",
   "problemContact": "Looking for a frontend developer?",
-  "letConnect" : "Let’s connect!",
+  "letConnect": "Let’s connect!",
   "name": "What’s your name?",
   "email": "What’s your email?",
   "help": "How can I help you?",
-  "privacyPolicy": "By submitting, I agree to the processing of my personal data in accordance with the <a class='test' href=''> privacy policy.</a>",
-  "acceptPrivacyPolicy" : "Please accept the privacy policy.",
+  "privacyPolicy": "By submitting, I agree to the processing of my personal data in accordance with the <a class='test' href='privacyPolicy'> privacy policy.</a>",
+  "acceptPrivacyPolicy": "Please accept the privacy policy.",
   "nameError": "Oops! it seems your name is missing or is too short",
   "emailError": "Hoppla! your email is required",
   "messageError": "What do you need to develop?",
-  "placeholderName" : "Your name goes here",
-  "placeholderEmail" : "youremail@email.com",
-  "placeholderMessage" : "Hello Mihael, I am interested in...",
+  "placeholderName": "Your name goes here",
+  "placeholderEmail": "youremail@email.com",
+  "placeholderMessage": "Hello Mihael, I am interested in...",
   "sayHello": "Say Hallo",
   "nextProject": "Next Project",
   "projects": {
@@ -66,5 +66,77 @@
     "3": {
       "quote": "“I had the good fortune of working with Mihael on a group project at the Developer Akademie that required a lot of dedication …”"
     }
+  },
+  "privacy": {
+    "headline": "Your Privacy Policy",
+    "general": {
+      "title": "General Information",
+      "responsible": "Information about the responsible party",
+      "company": "Company: Mihael Drazic",
+      "address": "Address: Hohenbergstraße 2, 78549 Spaichingen"
+    },
+    "dataProcessing": {
+      "title": "General Information on Data Processing",
+      "collection": "Personal data is only collected if you provide it voluntarily. No other personal data is collected...",
+      "purpose": "Purpose of processing: (usually) contract initiation or execution.",
+      "recipients": "Categories of recipients: Public authorities where legal provisions take precedence. External service providers or contractors...",
+      "thirdCountry": "Third-country transfers: In the course of contract execution, processors outside the EU may be used.",
+      "storage": "Data storage duration: Based on legal retention periods, typically 10 years."
+    },
+    "websiteSpecific": {
+      "title": "Specific Information About the Website",
+      "note": "-"
+    },
+    "usageData": {
+      "title": "Usage Data",
+      "description": "When you visit our website, technical data is transmitted via your internet browser...",
+      "points": [
+        "Date and time of the request",
+        "Name of the requested file",
+        "Page from which the file was requested",
+        "Access status (file transferred, file not found, etc.)",
+        "Used web browser and operating system",
+        "Complete IP address of the requesting computer",
+        "Amount of data transferred"
+      ],
+      "security": "For technical security reasons... Data is not compared with other datasets or passed on to third parties."
+    },
+    "cookies": {
+      "title": "Use of Necessary \"Cookies\"",
+      "description": "This website uses its own \"cookies\" to store settings required for display... No personal data is stored in our cookies."
+    },
+    "contacts": {
+      "title": "Further Information and Contacts",
+      "description": "You may exercise your rights at any time... contact us via email or mail."
+    },
+    "generatorNote": "This privacy policy was created by the IITR Datenschutz GmbH privacy generator."
+  },
+  "imprint": {
+    "title": "Imprint",
+    "responsible": {
+      "title": "Responsible",
+      "name": "Mihael Drazic, Frontend Developer"
+    },
+    "address": {
+      "title": "Address",
+      "details": "Hohenbergstraße 2, 78549 Spaichingen, Germany"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email: mihaeldraz10@gmail.com",
+      "phone": "Phone: +49 162 3275872"
+    },
+    "website": {
+      "title": "Website Information",
+      "copyright": "Copyright",
+      "copyrightNote": "All content on this website is protected by copyright.",
+      "editorial": "Editorial Responsibility",
+      "editorialNote": "Content responsibility according to § 55 Abs. 2 RStV: Max Mustermann"
+    },
+    "vsbg": {
+      "title": "Consumer Dispute Resolution",
+      "text2": "We are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
+    },
+    "generatedNote": "This imprint was created using the <a class='test' href='https://www.activemind.de/generatoren/impressum/' target='_blank'>imprint generator by activeMind AG</a> (Version 2024-07-05)."
   }
 }

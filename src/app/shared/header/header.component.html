@@ -1,22 +1,24 @@
 <div class="header">
-    <div class="buttons">
-      <div>
-        <app-language-switch></app-language-switch>
-      </div>
-      <div class="links">
-        <a
-          *ngFor="let link of links; let i = index"
-          (mouseenter)="hoveredIndex = i"
-          (mouseleave)="hoveredIndex = null"
-          [href]="link.href"
-        >
-          <span [ngClass]="{ 'dot-visible': hoveredIndex === i }" class="dot"></span>
-          {{ link.label | translate }}
-        </a>
-      </div>
+  <div class="buttons">
+    <div>
+      <app-language-switch></app-language-switch>
     </div>
-    <div class="logo">
+    <div *ngIf="!isAnotherPage()" class="links">
+      <a *ngFor="let link of links; let i = index" (mouseenter)="hoveredIndex = i" (mouseleave)="hoveredIndex = null"
+        [href]="link.href">
+        <span [ngClass]="{ 'dot-visible': hoveredIndex === i }" class="dot"></span>
+        {{ link.label | translate }}
+      </a>
     </div>
-    <div class="logo-mobile"></div>
-    <app-burgermenu  class="burger-menu"></app-burgermenu>
+    <div *ngIf="isAnotherPage()" class="links">
+      <a href="" (mouseenter)="ishovered = true" (mouseleave)="ishovered= false"><span
+          [ngClass]="{ 'dot-visible': ishovered }" class="dot"></span>
+          Portfolio
+      </a>
+    </div>
   </div>
+  <div class="logo">
+  </div>
+  <div class="logo-mobile"></div>
+  <app-burgermenu class="burger-menu"></app-burgermenu>
+</div>
