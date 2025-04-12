@@ -285,3 +285,9 @@
         }
     }
 }
+
+@media (max-width: 1000px) and (max-height: 450px){
+    .main-contet{
+        height: 120vh;
+    }
+}

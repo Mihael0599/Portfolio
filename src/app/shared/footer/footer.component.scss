@@ -1,8 +1,8 @@
 @import './../../../styles.scss';
 
 .footer{
-    @include dFlex(space-between, flex-end);
-    flex-direction: row;
+/*     @include dFlex(space-between, flex-end);
+    flex-direction: row; */
     width: 100%;
     max-width: 1920px;
     padding-top: 144px;
@@ -83,6 +83,22 @@
     opacity: 1;
   }
 
+  .footer-container{
+    width: 100%;
+    @include dFlex(space-between, flex-end);
+    flex-direction: row;
+  }
+
+  .name-mobile{
+    display: none;
+    height: 60px;
+    >span{
+        color: #3DCFB6;
+        font-family: 'Fira Code';
+        font-size: 18px;
+    };
+  }
+
   @media(max-width: 730px){
     .logo-container{
         padding-left: 16px;
@@ -93,4 +109,14 @@
     .links{
         padding-right: 16px;
     }
+  }
+
+  @media(max-width: 570px){
+    .name{
+        display: none;
+    }
+    .name-mobile{
+        @include dFlex();
+    }
+
   }

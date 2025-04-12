@@ -1,12 +1,13 @@
 @import './../../../../styles.scss';
 
 .pop-up-container{
-    height: 656px;
+    height: 700px;
     width: 90%;
     max-width: 1300px;
     background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
     border: 1px solid #3DCFB6;
     border-radius: 30px;
+    padding-bottom: 30px;
 }
 
 .pop-up {
@@ -119,7 +120,7 @@ span {
 .btn-next {
     position: absolute;
     right: 80px;
-    bottom: 0px;
+    bottom: -80px;
     @include dFlex();
     cursor: pointer;
 
@@ -165,13 +166,19 @@ span {
     }
 }
 
+@media(max-width: 1095px){
+    .btn-next{
+        bottom: -60px;
+    }
+}
+
 @media(max-width: 991px){
     .pop-up-container{
-        height: 75%;
+        height: 100%;
     }    
     .pop-up{
         flex-direction: column-reverse;
-        height: 90%;
+        height: 100%;
         justify-content: flex-end;
         padding: 0 12px;
         padding-top: 100px;
@@ -190,7 +197,7 @@ span {
         right: 32px;
     }
    .btn-next{
-    bottom: 40px;
+    bottom: 80px;
     right: 32px;
    } 
    .project-img{
@@ -229,7 +236,10 @@ span {
         padding: 9px 18px;
     }
     .pop-up-container{
-        height: 65%;
+        height: 100%;
+    }
+    .skills{
+        flex-wrap: wrap;
     }
 }
 
