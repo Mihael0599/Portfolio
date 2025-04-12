@@ -1,13 +1,13 @@
-<div class="content" id="projects" data-aos="fade-down">
+<div class="content" data-aos="fade-down">
     <div>
         <h2>Portfolio</h2>
         <h1>{{ "featuredProjects" | translate }}</h1>
-        <p [innerHTML]="'featuredProjectsText' | translate"></p>
+        <p [innerHTML]="'featuredProjectsText' | translate" (click)="closeModal()"></p>
 
         <app-project-card [projects]="projects" (open)="openModal($event)">
         </app-project-card>
     </div>
     <app-project-modal class="dialog" *ngIf="showModal" [selectedIndex]="selectedIndex"
-        [selectedProject]="selectedProject" [projects]="projects" (close)="closeModal()">
+        [selectedProject]="selectedProject" [projects]="projects" (click)="closeModal()" (close)="closeModal()">
     </app-project-modal>
 </div>
