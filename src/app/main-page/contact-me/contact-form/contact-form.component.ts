@@ -1,6 +1,6 @@
 import { NgFor } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { FormBuilder, FormsModule, NgForm, } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
@@ -26,6 +26,7 @@ export class ContactFormComponent {
   }
 
   privacyAccepted: boolean = false;
+  @Output() messageSent = new EventEmitter<boolean>();
 
   mailTest = false;
 
@@ -46,7 +47,7 @@ export class ContactFormComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log("Email gesendet", this.contactData);
+            this.messageSent.emit(true);
             ngForm.resetForm();
           },
           error: (error) => {

@@ -18,6 +18,11 @@
         </div>
     </div>
     <div class="contat-form">
-        <app-contact-form></app-contact-form>
+        <app-contact-form (messageSent)="onMessageSent($event)"></app-contact-form>
+    </div>
+    <div *ngIf="messageSent" class="message-feedback" id="msg">
+        <div class="msg-box">
+            <h2>Vielen Dank! Deine E-Mail ist bei mir eingegangen.</h2>
+        </div>
     </div>
 </div>
