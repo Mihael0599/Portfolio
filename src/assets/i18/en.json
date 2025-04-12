@@ -43,9 +43,10 @@
   "placeholderName": "Your name goes here",
   "placeholderEmail": "youremail@email.com",
   "placeholderMessage": "Hello Mihael, I am interested in...",
-  "sayHello": "Say Hallo",
+  "sayHello": "Say Hello",
   "nextProject": "Next Project",
   "feedbackMsg": "Thank you! Your email has been received.",
+  "legalNotice": "Legal Notice",
   "projects": {
     "join": {
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
@@ -113,7 +114,7 @@
     "generatorNote": "This privacy policy was created by the IITR Datenschutz GmbH privacy generator."
   },
   "imprint": {
-    "title": "Imprint",
+    "title": "Legal Notice",
     "responsible": {
       "title": "Responsible",
       "name": "Mihael Drazic, Frontend Developer"

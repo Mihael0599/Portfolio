@@ -1,10 +1,11 @@
 import { NgClass, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [NgClass, NgFor],
+  imports: [NgClass, NgFor, TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -27,7 +28,7 @@ export class FooterComponent {
       href: 'mailto:mihaeldraz10@gmail.com',
     },
     {
-      label: 'Legal Notice',
+      label: 'legalNotice',
       href: 'imprint',
     }
   ];

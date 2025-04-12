@@ -1,5 +1,5 @@
 <div class="burger-menu">
-  <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+  <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" #checkboxToggle>
   <label for="checkbox1">
     <div class="hamburger hamburger1" (click)="toggleMenu()">
       <span class="bar bar1"></span>
@@ -10,13 +10,13 @@
   </label>
   <div #mobile id="mobile" class="mobile-menu" [class.open]="active">
     <div>
-      <a href="about-me">{{"About me" | translate}}</a>
+      <a (click)="closeMenu(checkboxToggle)" href="#about-me">{{"About me" | translate}}</a>
     </div>
     <div>
-      <a href="#skills">{{"Skills" | translate}}</a>
+      <a (click)="closeMenu(checkboxToggle)" href="#skills">{{"Skills" | translate}}</a>
     </div>
     <div>
-      <a href="#projects">{{"Projects" | translate }}</a>
+      <a (click)="closeMenu(checkboxToggle)" href="#projects">{{"Projects" | translate }}</a>
     </div>
     <div>
       <app-language-switch class="switch-lang"></app-language-switch>

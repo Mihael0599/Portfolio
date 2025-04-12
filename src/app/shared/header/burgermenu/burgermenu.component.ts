@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitchComponent } from "../language-switch/language-switch.component";
 
@@ -15,5 +15,11 @@ export class BurgermenuComponent {
 
   toggleMenu() {
     this.active = !this.active;
+
+  }
+
+  closeMenu(checkbox: HTMLInputElement){
+    checkbox.checked = false;
+    this.active = false;
   }
 }

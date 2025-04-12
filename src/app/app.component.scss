@@ -6,8 +6,10 @@ body {
 
 .header {
     @include dFlex();
+    background: linear-gradient(171deg, #1C1C1C 36.26%, #08463B 93.28%);
 }
 
 .footer {
     @include dFlex();
+    background-color: #1c1c1c;
 }
