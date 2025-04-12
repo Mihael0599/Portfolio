@@ -20,9 +20,9 @@
     <div class="contat-form">
         <app-contact-form (messageSent)="onMessageSent($event)"></app-contact-form>
     </div>
-    <div *ngIf="messageSent" class="message-feedback" id="msg">
+    <div *ngIf="messageSent" class="message-feedback">
         <div class="msg-box">
-            <h2>Vielen Dank! Deine E-Mail ist bei mir eingegangen.</h2>
+            <h2>{{"feedbackMsg" | translate }}</h2>
         </div>
     </div>
 </div>

@@ -45,6 +45,7 @@
   "placeholderMessage": "Hello Mihael, I am interested in...",
   "sayHello": "Say Hallo",
   "nextProject": "Next Project",
+  "feedbackMsg": "Thank you! Your email has been received.",
   "projects": {
     "join": {
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."

@@ -45,6 +45,7 @@
   "placeholderMessage": "Hallo Mihael, Ich habe interesse an...",
   "sayHello": "Sag Hallo",
   "nextProject": "Nächstes Projekt",
+  "feedbackMsg": "Vielen Dank! Ihre E-Mail ist bei mir eingegangen.",
   "projects": {
     "join": {
       "description": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu."

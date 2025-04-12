@@ -135,6 +135,15 @@ p {
     }
 }
 
+@media(max-width: 680px){
+    .msg-box{
+        width: 90%;
+        text-align: center;
+/*         margin-left: 16px;
+        margin-right: 32px; */
+    }
+}
+
 @media (max-width: 650px) {
     .contact-me-container {
         width: 100%;
