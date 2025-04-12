@@ -1,6 +1,6 @@
 @import './../../../../styles.scss';
 
-.pop-up-container{
+.pop-up-container {
     height: 700px;
     width: 90%;
     max-width: 1300px;
@@ -130,11 +130,13 @@ span {
         font-family: 'Karla';
         cursor: pointer;
     }
-    &:hover{
-        >button{
+
+    &:hover {
+        >button {
             color: white
         }
-        >img{
+
+        >img {
             transition: 0.3s ease-in-out;
             transform: translateX(5px);
             cursor: pointer;
@@ -166,85 +168,97 @@ span {
     }
 }
 
-@media(max-width: 1095px){
-    .btn-next{
+@media(max-width: 1095px) {
+    .btn-next {
         bottom: -60px;
     }
 }
 
-@media(max-width: 991px){
-    .pop-up-container{
+@media(max-width: 991px) {
+    .pop-up-container {
         height: 100%;
-    }    
-    .pop-up{
+    }
+
+    .pop-up {
         flex-direction: column-reverse;
         height: 100%;
         justify-content: flex-end;
         padding: 0 12px;
         padding-top: 100px;
     }
-    h1{
+
+    h1 {
         font-size: 72px;
     }
-    h2{
+
+    h2 {
         font-size: 56px;
     }
-    .modal-content{
+
+    .modal-content {
         padding: 0;
     }
-    .close-button-container{
+
+    .close-button-container {
         top: 32px;
         right: 32px;
     }
-   .btn-next{
-    bottom: 80px;
-    right: 32px;
-   } 
-   .project-img{
-    padding: 0;
-   }
+
+    .btn-next {
+        bottom: 80px;
+        right: 32px;
+    }
+
+    .project-img {
+        padding: 0;
+    }
 }
 
-@media(max-width: 580px){
-    h3{
+@media(max-width: 580px) {
+    h3 {
         font-size: 20px;
     }
-    p{
+
+    p {
         font-size: 16px;
     }
-    .skills{
-        >div{
-            >img{
+
+    .skills {
+        >div {
+            >img {
                 width: 20px;
                 height: 20px;
             }
         }
     }
-    .modal-content{
+
+    .modal-content {
         width: 100%;
     }
 }
 
-@media (max-width: 550px){
-    .pop-up-container{
+@media (max-width: 550px) {
+    .pop-up-container {
         height: 100%;
-    } 
+    }
 }
 
-@media(max-width: 385px){
-    .btn-outline{
+@media(max-width: 385px) {
+    .btn-outline {
         padding: 9px 18px;
     }
-    .pop-up-container{
+
+    .pop-up-container {
         height: 100%;
     }
-    .skills{
+
+    .skills {
         flex-wrap: wrap;
     }
 }
 
-@media(max-width: 360px){
-    .btn-outline{
+@media(max-width: 360px) {
+    .btn-outline {
         padding: 4px 8px;
     }
 }

@@ -40,5 +40,4 @@ export class ProjectModalComponent {
       this.selectedProject = this.projects[this.selectedIndex];
     }
   }
-  
 }

@@ -1,7 +1,7 @@
 @import './../../../styles.scss';
 
-.footer{
-/*     @include dFlex(space-between, flex-end);
+.footer {
+    /*     @include dFlex(space-between, flex-end);
     flex-direction: row; */
     width: 100%;
     max-width: 1920px;
@@ -12,11 +12,12 @@
     background-color: #1c1c1c;
 }
 
-.logo-container{
+.logo-container {
     @include dFlex(center, flex-start);
     flex-direction: column;
     padding-left: 96px;
-    >img{
+
+    >img {
         position: absolute;
         left: 50px;
         top: 110px;
@@ -25,48 +26,53 @@
     }
 }
 
-.logo-container:hover{
-    img{
+.logo-container:hover {
+    img {
         display: none;
     }
 
-    .logo-hover{
+    .logo-hover {
         cursor: pointer;
         display: block;
     }
 }
 
-.logo-hover{
+.logo-hover {
     display: none;
 }
 
-.links{
+.links {
     @include dFlex(center, flex-start);
     flex-direction: column;
     gap: 8px;
     padding-right: 96px;
-    >a{
+
+    >a {
         font-size: 20px;
         font-family: 'Karla';
         font-weight: 400;
         position: relative;
         display: inline-flex;
         align-items: center;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
             color: #3DCFB6;
         }
     }
 }
 
-.name{
+.name {
     @include dFlex();
     height: 60px;
-    >span{
+
+    >span {
         color: #3DCFB6;
         font-family: 'Fira Code';
         font-size: 18px;
-    };
+    }
+
+    ;
 }
 
 .dot {
@@ -74,49 +80,55 @@
     height: 8px;
     margin-right: 6px;
     border-radius: 50%;
-    background-color:#6AD7BF;
+    background-color: #6AD7BF;
     opacity: 0;
     transition: opacity 0.2s ease-in;
-  }
-  
-  .dot-visible {
-    opacity: 1;
-  }
+}
 
-  .footer-container{
+.dot-visible {
+    opacity: 1;
+}
+
+.footer-container {
     width: 100%;
     @include dFlex(space-between, flex-end);
     flex-direction: row;
-  }
+}
 
-  .name-mobile{
+.name-mobile {
     display: none;
     height: 60px;
-    >span{
+
+    >span {
         color: #3DCFB6;
         font-family: 'Fira Code';
         font-size: 18px;
-    };
-  }
+    }
 
-  @media(max-width: 730px){
-    .logo-container{
+    ;
+}
+
+@media(max-width: 730px) {
+    .logo-container {
         padding-left: 16px;
-        >img{
+
+        >img {
             left: -25px;
         }
     }
-    .links{
+
+    .links {
         padding-right: 16px;
     }
-  }
+}
 
-  @media(max-width: 570px){
-    .name{
+@media(max-width: 570px) {
+    .name {
         display: none;
     }
-    .name-mobile{
+
+    .name-mobile {
         @include dFlex();
     }
 
-  }
+}

@@ -10,6 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './oppinion-about-me.component.html',
   styleUrl: './oppinion-about-me.component.scss'
 })
-export class OppinionAboutMeComponent{
+export class OppinionAboutMeComponent {
 
 }

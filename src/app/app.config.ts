@@ -7,21 +7,21 @@ import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-export function HttpLoaderFactor(http: HttpClient){
+export function HttpLoaderFactor(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18/', '.json');
 }
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), provideHttpClient(), provideAnimationsAsync(),
-    importProvidersFrom(
-      HttpClientModule,
-      TranslateModule.forRoot({
-        loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactor,
-          deps: [HttpClient]
-        }
-      })
-    )
+  importProvidersFrom(
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactor,
+        deps: [HttpClient]
+      }
+    })
+  )
   ]
 };

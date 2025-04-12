@@ -1,6 +1,6 @@
-@import '../../../styles.scss'; 
+@import '../../../styles.scss';
 
-.content{
+.content {
     background-color: #1c1c1c;
     height: 708px;
     width: 100%;
@@ -10,26 +10,28 @@
     gap: 130px;
 }
 
-.myimg{
+.myimg {
     width: 568px;
     height: 568px;
     border-radius: 30px;
     object-fit: cover;
 }
 
-.image-container{
+.image-container {
     height: 100%;
     padding-left: 112px;
 }
 
-.about-me{
+.about-me {
     height: 100%;
     @include dFlex(flex-end, flex-start);
     flex-direction: column;
     padding-right: 96px;
-    >.title{
+
+    >.title {
         padding-bottom: 20px;
-        >h1{
+
+        >h1 {
             color: #3DCFB6;
             font-size: 24px;
             font-family: 'Karla';
@@ -38,7 +40,7 @@
     }
 }
 
-.description-container{
+.description-container {
     width: 568px;
     border-radius: 30px;
     background-color: #3DCFB61A;
@@ -46,8 +48,9 @@
     border: 1px solid #3DCFB6;
     padding-left: 32px;
     padding-right: 32px;
+
     >div {
-        >h1{
+        >h1 {
             color: #3DCFB6;
             font-size: 64px;
             font-family: 'Fira Code';
@@ -59,16 +62,18 @@
 }
 
 
-.cards-container{
+.cards-container {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-right: 32px;
-    >.cards{
+
+    >.cards {
         padding-top: 16px;
         @include dFlex();
         gap: 24px;
-        >div{
-            >h3{
+
+        >div {
+            >h3 {
                 color: white;
                 font-size: 18px;
             }
@@ -76,100 +81,109 @@
     }
 }
 
-@media (max-width: 1560px){
-    .description-container{
+@media (max-width: 1560px) {
+    .description-container {
         max-width: 568px;
         width: 100%;
         height: 634px;
     }
-    .content{
+
+    .content {
         justify-content: space-between;
         gap: 30px;
     }
 }
 
-@media (max-width:1360px){
-    .myimg{
+@media (max-width:1360px) {
+    .myimg {
         height: 100%;
         max-width: 568px;
         width: 100%;
     }
 }
 
-@media (max-width: 1220px){
-    .description-container{
+@media (max-width: 1220px) {
+    .description-container {
         height: 100%;
     }
-    h1{
+
+    h1 {
         font-size: 56px !important;
         padding-bottom: 20px !important;
         padding-top: 16px !important;
     }
-    .title{
-        h1{
+
+    .title {
+        h1 {
             font-size: 24px !important;
             padding-bottom: 0 !important;
             padding-top: 0 !important;
         }
-    }   
+    }
 }
 
-@media (max-width: 1030px){
-    p{
+@media (max-width: 1030px) {
+    p {
         font-size: 16px !important;
     }
 }
 
-@media (max-width: 905px){
-    .content{
+@media (max-width: 905px) {
+    .content {
         height: 100%;
         flex-direction: column;
         justify-content: center;
     }
-    .image-container{
+
+    .image-container {
         padding-left: 32px;
         padding-right: 32px;
     }
-    .about-me{
+
+    .about-me {
         padding-right: 96px;
         padding-left: 32px;
     }
 }
 
-@media (max-width: 500px){
-.myimg{
-    height: 358px;
-}
-.cards-container{
-    padding-top: 0;
+@media (max-width: 500px) {
+    .myimg {
+        height: 358px;
+    }
+
+    .cards-container {
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 48px !important;
+    }
 }
 
-h1{
-    font-size: 48px !important;
-}
-}
-
-@media (max-width: 440px){
-    .cards{
+@media (max-width: 440px) {
+    .cards {
         flex-direction: column;
         gap: 12px !important;
     }
-    h1{
+
+    h1 {
         font-size: 32px !important;
     }
-    .title{
-        h1{
+
+    .title {
+        h1 {
             font-size: 18px !important;
         }
     }
 }
 
-@media (max-width: 385px){
-    .about-me{
+@media (max-width: 385px) {
+    .about-me {
         padding-right: 0;
         padding-left: 20px;
     }
-    .description-container{
+
+    .description-container {
         width: 70%;
     }
 }

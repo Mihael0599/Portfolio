@@ -10,8 +10,8 @@ describe('ContactFormComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ContactFormComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(ContactFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

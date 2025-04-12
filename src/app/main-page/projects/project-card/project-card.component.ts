@@ -26,6 +26,6 @@ export class ProjectCardComponent {
   }
 
   openModal(index: number) {
-    this.open.emit(index); // gibt den Index an die Elternkomponente weiter
+    this.open.emit(index); 
   }
 }

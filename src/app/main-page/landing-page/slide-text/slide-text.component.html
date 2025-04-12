@@ -1,9 +1,9 @@
 <div class="slide-text">
-    <ul *ngFor="let repeat of [1, 2, 3]">
-      <ng-container *ngFor="let item of items; let last = last">
-        <li>{{ item | translate}}</li>
-        <li *ngIf="!last">•</li>
-      </ng-container>
-      <li>•</li>
-    </ul>
-  </div>
+  <ul *ngFor="let repeat of [1, 2, 3]">
+    <ng-container *ngFor="let item of items; let last = last">
+      <li>{{ item | translate}}</li>
+      <li *ngIf="!last">•</li>
+    </ng-container>
+    <li>•</li>
+  </ul>
+</div>

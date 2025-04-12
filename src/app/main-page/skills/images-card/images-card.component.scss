@@ -1,22 +1,24 @@
-@import '../../../../styles.scss'; 
+@import '../../../../styles.scss';
 
 
-.icons{
+.icons {
     @include dFlex();
     flex-direction: column
 }
 
-.icon{
+.icon {
     @include dFlex();
     flex-direction: column;
+
     &.hover {
         transform: scale(1.1);
     }
 }
 
-.title{
+.title {
     width: 90px;
-    >p{
+
+    >p {
         color: white;
         padding-top: 8px;
         font-size: 18px;

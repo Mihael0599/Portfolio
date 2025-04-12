@@ -49,7 +49,7 @@ export class CarouselComponent implements AfterViewInit {
       this.currentIndex = (this.currentIndex - 1 + items.length) % items.length;
       scrollToIndex(this.currentIndex);
     });
-    
+
     next?.addEventListener('click', () => {
       this.currentIndex = (this.currentIndex + 1) % items.length;
       scrollToIndex(this.currentIndex);

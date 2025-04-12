@@ -1,13 +1,12 @@
 @import './../../styles.scss';
 
-*{
+* {
     margin: 0;
 }
 
-.content{
+.content {
     @include dFlex();
     flex-direction: column;
     width: 100%;
     position: relative;
 }
-

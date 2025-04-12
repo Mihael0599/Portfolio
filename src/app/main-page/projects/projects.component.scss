@@ -55,13 +55,14 @@ h2 {
     }
 }
 
-@media(max-width:991px){
-    .content{
-        >div{
+@media(max-width:991px) {
+    .content {
+        >div {
             padding-right: 96px;
         }
     }
-    .dialog{
+
+    .dialog {
         top: -180px;
     }
 }
@@ -98,6 +99,4 @@ h2 {
     }
 }
 
-@media(max-width: 360px){
-    
-}
+@media(max-width: 360px) {}

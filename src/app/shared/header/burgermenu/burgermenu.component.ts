@@ -15,11 +15,5 @@ export class BurgermenuComponent {
 
   toggleMenu() {
     this.active = !this.active;
-
-/*     if (this.active) {
-      document.body.style.overflowX = ''
-    }else{
-      document.body.style.overflowX = 'hidden';
-    } */
   }
 }

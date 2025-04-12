@@ -16,7 +16,7 @@ export class LanguageSwitchComponent {
   toggleLanguage() {
     this.globalData.switchLanguage();
   }
-  
+
   isLang(lang: string): boolean {
     return this.globalData.currentLang === lang;
   }
