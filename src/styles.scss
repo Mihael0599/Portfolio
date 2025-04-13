@@ -34,6 +34,10 @@ body {
 a {
     text-decoration: none;
     color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 a.test {
@@ -51,6 +55,12 @@ a.test {
 h1 {
     color: #3DCFB6;
     font-size: 64px;
+    font-family: 'Fira Code';
+    font-weight: 700;
+    font-family: Fira Code;
+    line-height: 100%;
+    letter-spacing: -3%;
+
 }
 
 h2 {
