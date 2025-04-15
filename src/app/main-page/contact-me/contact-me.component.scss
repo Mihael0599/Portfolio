@@ -57,11 +57,9 @@ p {
 }
 
 .message-feedback {
-   /*  display: none; */
     position: absolute;
     width: 100vw;
     height: 100vh;
-    /* background-color: rgba(0, 0, 0, 0.356); */
     justify-content: center;
     align-items: center;
 }
@@ -139,8 +137,6 @@ p {
     .msg-box{
         width: 90%;
         text-align: center;
-/*         margin-left: 16px;
-        margin-right: 32px; */
     }
 }
 
