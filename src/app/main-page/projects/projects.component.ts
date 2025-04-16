@@ -16,9 +16,9 @@ export class ProjectsComponent {
     {
       projectName: 'Pokedex',
       skills: ['JavaScript', 'CSS', 'HTML'],
-      imageURL: 'assets/img/dabubble.png',
+      imageURL: 'assets/img/pokedex.png',
       imageModal: 'assets/img/pokedex-modulo.png',
-      description: 'projects.daBubble.description',
+      description: 'projects.pokedex.description',
       githubLink: 'https://github.com/Mihael0599/Pokedex-with-React',
       liveTestLink: 'https://mihael-drazic.de/Pokedex/'
     },

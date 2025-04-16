@@ -54,7 +54,7 @@
     "elPolloLoco": {
       "description": "Ein 2D-Jump-and-Run-Spiel mit objektorientierter Architektur. Hilf Pepe, Münzen und Tabasco zu sammeln, um gegen das verrückte Huhn zu kämpfen."
     },
-    "daBubble": {
+    "pokedex": {
       "description": "Eine Slack-ähnliche App zur Verbesserung der Teamkommunikation mit intuitiver Oberfläche, Echtzeit-Nachrichten und klarer Kanalstruktur."
     }
   },
