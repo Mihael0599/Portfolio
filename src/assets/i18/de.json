@@ -47,6 +47,7 @@
   "nextProject": "Nächstes Projekt",
   "feedbackMsg": "Vielen Dank! Ihre E-Mail ist bei mir eingegangen.",
   "legalNotice": "Impressum",
+  "comingSoon": "In Entwicklung",
   "projects": {
     "join": {
       "description": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu."
@@ -56,6 +57,9 @@
     },
     "pokedex": {
       "description": "Eine Slack-ähnliche App zur Verbesserung der Teamkommunikation mit intuitiver Oberfläche, Echtzeit-Nachrichten und klarer Kanalstruktur."
+    },
+    "dabubble": {
+      "description": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation."
     }
   },
   "testimonials": {

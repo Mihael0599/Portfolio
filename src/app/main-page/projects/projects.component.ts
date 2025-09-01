@@ -13,15 +13,15 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 })
 export class ProjectsComponent {
   projects = [
-    {
-      projectName: 'Pokedex',
-      skills: ['JavaScript', 'CSS', 'HTML'],
-      imageURL: 'assets/img/pokedex.png',
-      imageModal: 'assets/img/pokedex-modulo.png',
-      description: 'projects.pokedex.description',
-      githubLink: 'https://github.com/Mihael0599/Pokedex-with-React',
-      liveTestLink: 'https://mihael-drazic.de/Pokedex/'
-    },
+    /*     {
+          projectName: 'Pokedex',
+          skills: ['JavaScript', 'CSS', 'HTML'],
+          imageURL: 'assets/img/pokedex.png',
+          imageModal: 'assets/img/pokedex-modulo.png',
+          description: 'projects.pokedex.description',
+          githubLink: 'https://github.com/Mihael0599/Pokedex-with-React',
+          liveTestLink: 'https://mihael-drazic.de/Pokedex/'
+        }, */
     {
       projectName: 'Join',
       skills: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
@@ -29,7 +29,8 @@ export class ProjectsComponent {
       imageModal: 'assets/img/join-modal.png',
       description: 'projects.join.description',
       githubLink: 'https://github.com/Mihael0599/Join',
-      liveTestLink: 'https://mihael-drazic.de/Join/'
+      liveTestLink: 'https://mihael-drazic.de/Join/',
+      hasLink: true
     },
     {
       projectName: 'El Pollo Loco',
@@ -38,7 +39,19 @@ export class ProjectsComponent {
       imageModal: 'assets/img/elpolloloco-modal.png',
       description: 'projects.elPolloLoco.description',
       githubLink: 'https://github.com/Mihael0599/El-Pollo-Loco',
-      liveTestLink: 'https://mihael-drazic.de/ElPolloLoco/'
+      liveTestLink: 'https://mihael-drazic.de/ElPolloLoco/',
+      hasLink: true,
+    },
+    {
+      projectName: 'Da Bubble',
+      skills: ['Angular', 'Firebase', 'TypeScript'],
+      imageURL: 'assets/img/dabubble.png',
+      imageModal: 'assets/img/dabubble-modal.png',
+      description: 'projects.dabubble.description',
+      githubLink: 'https://github.com/Mihael0599/DaBubble',
+      hasLink: false,
+      /* liveTestLink: 'https://mihael-drazic.de/ElPolloLoco/', */
+
     },
   ];
 
@@ -57,4 +70,5 @@ export class ProjectsComponent {
     this.selectedProject = null;
     this.showModal = false;
   }
+  
 }

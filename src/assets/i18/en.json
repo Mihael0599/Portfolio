@@ -47,6 +47,7 @@
   "nextProject": "Next Project",
   "feedbackMsg": "Thank you! Your email has been received.",
   "legalNotice": "Legal Notice",
+  "comingSoon": "Coming Soon",
   "projects": {
     "join": {
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
@@ -55,6 +56,9 @@
       "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
     },
     "pokedex": {
+      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    },
+    "dabubble": {
       "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
     }
   },

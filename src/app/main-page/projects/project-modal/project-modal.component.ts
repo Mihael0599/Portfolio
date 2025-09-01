@@ -34,7 +34,8 @@ export class ProjectModalComponent {
     this.close.emit();
   }
 
-  nextProject() {
+  nextProject(event: MouseEvent) {
+    event.stopPropagation();
     if (this.projects && this.projects.length > 0 && this.selectedIndex !== null) {
       this.selectedIndex = (this.selectedIndex + 1) % this.projects.length;
       this.selectedProject = this.projects[this.selectedIndex];
