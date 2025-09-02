@@ -1,0 +1,148 @@
+{
+    "About me": "O meni",
+    "Skills": "Vještine",
+    "Projects": "Projekti",
+    "whoAmI": "Tko sam ja",
+    "checkMyWork": "Pogledajte moje projekte",
+    "contactMe": "Kontaktirajte me",
+    "frontendDeveloper": "Frontend programer",
+    "openToWork": "Otvoren za nove poslovne mogućnosti",
+    "availableRemote": "Dostupan za rad na daljinu",
+    "basedInSpaichingen": "Sa sjedištem u Spaichingenu",
+    "aboutMeTitle": "O meni",
+    "aboutMeDescription": "Bok, ja sam Mihael! Ja sam frontend programer s jakim fokusom na moderne web tehnologije poput HTML-a, CSS-a, JavaScript-a i Frameworka poput Angular. Moj cilj je razviti intuitivna i učinkovita korisnička sučelja.",
+    "aboutMeLocation": "Živim u Spaichingenu, malom gradu blizu Bodenskog jezera. Trenutno sam otvoren za remote rad i veselim se uzbudljivim novim zadacima u IT području.",
+    "aboutMeMindSet": "Zbog svoje znatiželje i volje za učenjem brzo savladavam nove tehnologije i volim pronalaziti kreativna rješenja za složene izazove.",
+    "aboutMeProblemSolving": "Analitičkim razmišljanjem, upornošću i timskim duhom usmjereno radim na svakom izazovu – i pri tome stalno učim.",
+    "technologies": "Tehnologije",
+    "skillSet": "Vještine",
+    "skillSetDescription": "U svom radu kao frontend programer koristim moderne web tehnologije poput HTML-a, CSS-a, JavaScripta te Frameworka kao što je Angular, kako bih razvijao korisnički prilagođene i brze aplikacije. Imam iskustva u izradi responzivnih dizajna, integraciji API-ja i razvoju interaktivnih korisničkih sučelja. Stalno učim jer vjerujem da je u web razvoju kontinuirano usavršavanje ključ kvalitete i inovacije.",
+    "youNeed": "Trebate",
+    "anotherSkill": "određenu vještinu?",
+    "needAnotherSkillText": "Slobodno mi se javite – veselim se proširivanju znanja i prihvaćanju novih izazova.",
+    "letsTalk": "Kontaktiraj me",
+    "specialInterest": "Posebno me<br>zanimaju nova znanja",
+    "featuredProjects": "Moji projekti",
+    "featuredProjectsText": "",
+    "aboutProject": "Što je ovaj projekt?",
+    "oppinionAboutMe": "Što moji kolege kažu o meni",
+    "letsWork": "Započnimo",
+    "together": "zajedno.",
+    "problemSlove": "Imate problem za riješiti?",
+    "problemDescription": "Tražim projekte u kojima se mogu uključiti kao frontend programer – remote ili u timu. Svojim strukturiranim i rješenjima usmjerenim radom rado ću podržati i tvoj projekt. Razgovarajmo!",
+    "problemContact": "Trebate frontend programera?",
+    "letConnect": "Javite mi se!",
+    "name": "Kako se zovete?",
+    "email": "Koja je vaša e-mail adresa?",
+    "help": "Kako vam mogu pomoći?",
+    "privacyPolicy": "Slanjem prihvaćam obradu svojih osobnih podataka u skladu s <a class='test' href='privacyPolicy'>politikom privatnosti</a>.",
+    "acceptPrivacyPolicy": "Molim vas prihvatite politiku privatnosti.",
+    "nameError": "Ups! Čini se da vaše ime nedostaje ili je prekratko",
+    "emailError": "Ups! Vaša e-mail adresa je obavezna",
+    "messageError": "Što želite razviti?",
+    "placeholderName": "Ovdje upišite svoje ime",
+    "placeholderEmail": "vasaemail@email.com",
+    "placeholderMessage": "Bok Mihael, zanima me...",
+    "sayHello": "Pozdravite me",
+    "nextProject": "Sljedeći projekt",
+    "feedbackMsg": "Hvala! Vaša poruka je stigla do mene.",
+    "legalNotice": "Impressum",
+    "comingSoon": "U izradi",
+    "projects": {
+        "join": {
+            "description": "Upravitelj zadataka inspiriran Kanban sustavom. Stvaraj i organiziraj zadatke putem drag-and-drop funkcije, dodjeljuj korisnike i kategorije."
+        },
+        "elPolloLoco": {
+            "description": "2D jump-and-run igra s objektno orijentiranom arhitekturom. Pomozi Pepeu da sakupi novčiće i Tabasco kako bi se borio protiv ludog pijetla."
+        },
+        "pokedex": {
+            "description": "Aplikacija slična Slacku za poboljšanje timske komunikacije s intuitivnim sučeljem, porukama u stvarnom vremenu i jasnom strukturom kanala."
+        },
+        "dabubble": {
+            "description": "Ova aplikacija je klon Slacka. Revolucionira timsku komunikaciju i suradnju sa svojim intuitivnim korisničkim sučeljem, porukama u stvarnom vremenu i robusnom organizacijom kanala."
+        }
+    },
+    "testimonials": {
+        "1": {
+            "quote": "Suradnja s Mihaelom bila je vrlo ugodna i učinkovita. Zahvaljujući njegovom tehničkom znanju i strukturiranom načinu rada, razvoj je tekao glatko i produktivno."
+        },
+        "2": {
+            "quote": "„Učinkovit način rada Mihaela bio je veliki dobitak za naš projekt.“"
+        },
+        "3": {
+            "quote": "Imao sam sreću raditi s Mihaelom na zahtjevnom projektu u Developer Akademiji. Uvijek je ostao smiren, fokusiran i uspješno je vodio naš tim naprijed."
+        }
+    },
+    "privacy": {
+        "headline": "Vaša politika privatnosti",
+        "general": {
+            "title": "Opće informacije",
+            "responsible": "Podaci o odgovornoj osobi",
+            "company": "Tvrtka: Mihael Drazic",
+            "address": "Adresa: Hohenbergstraße 2, 78549 Spaichingen"
+        },
+        "dataProcessing": {
+            "title": "Opće informacije o obradi podataka",
+            "collection": "Osobni podaci prikupljaju se samo ako nam ih sami dostavite. Osim toga, ne prikupljaju se nikakvi osobni podaci...",
+            "purpose": "Svrha obrade: (u pravilu) sklapanje ili izvršenje ugovora.",
+            "recipients": "Kategorije primatelja: Javna tijela u slučaju važećih zakonskih propisa. Vanjski pružatelji usluga ili drugi izvršitelji...",
+            "thirdCountry": "Prijenos u treće zemlje: U okviru izvršenja ugovora mogu se koristiti i izvršitelji izvan Europske unije.",
+            "storage": "Trajanje pohrane podataka: Trajanje pohrane određeno je zakonskim obvezama čuvanja i u pravilu iznosi 10 godina."
+        },
+        "websiteSpecific": {
+            "title": "Specifične informacije o web stranici",
+            "note": "-"
+        },
+        "usageData": {
+            "title": "Podaci o korištenju",
+            "description": "Kada posjećujete naše web stranice, putem vašeg internetskog preglednika (iz tehničke nužnosti) šaljete podatke našem web poslužitelju...",
+            "points": [
+                "Datum i vrijeme zahtjeva",
+                "Naziv traženih podataka",
+                "Stranica s koje je datoteka zatražena",
+                "Status pristupa (datoteka prenesena, datoteka nije pronađena itd.)",
+                "korišteni web preglednik i korišteni operativni sustav",
+                "puna IP adresa računala koje šalje zahtjev",
+                "prenijena količina podataka"
+            ],
+            "security": "Iz sigurnosnih razloga... Usklađivanje s drugim podacima ili prijenos trećima ne provodi se."
+        },
+        "cookies": {
+            "title": "Korištenje vlastitih 'kolačića' potrebnih za prikaz web stranica",
+            "description": "Ova web stranica koristi vlastite 'kolačiće' za spremanje postavki potrebnih za prikaz web stranica..."
+        },
+        "contacts": {
+            "title": "Dodatne informacije i kontakti",
+            "description": "Osim toga, u svakom trenutku možete ostvariti svoja prava na pristup, ispravak ili brisanje... kontaktirajte nas."
+        },
+        "generatorNote": "Ova politika privatnosti izrađena je pomoću generatora privatnosti IITR Datenschutz GmbH."
+    },
+    "imprint": {
+        "title": "Impressum",
+        "responsible": {
+            "title": "Odgovorna osoba",
+            "name": "Mihael Drazic, frontend programer"
+        },
+        "address": {
+            "title": "Adresa",
+            "details": "Hohenbergstraße 2, 78549 Spaichingen, Njemačka"
+        },
+        "contact": {
+            "title": "Kontakt",
+            "email": "E-mail: mihaeldraz10@gmail.com",
+            "phone": "Telefon: +49 162 3275872"
+        },
+        "website": {
+            "title": "Informacije o web stranici",
+            "copyright": "Autorsko pravo",
+            "copyrightNote": "Svi sadržaji na ovoj web stranici zaštićeni su autorskim pravom.",
+            "editorial": "Urednička odgovornost",
+            "editorialNote": "Sadržajno odgovoran prema § 55 st. 2 RStV: Max Mustermann"
+        },
+        "vsbg": {
+            "title": "Rješavanje potrošačkih sporova",
+            "text2": "Nismo obvezni niti spremni sudjelovati u postupku rješavanja sporova pred potrošačkim arbitražnim tijelom."
+        },
+        "generatedNote": "Ovaj impressum izrađen je uz pomoć <a class='test' href='https://www.activemind.de/generatoren/impressum/' target='_blank'>generatorske usluge activeMind AG</a> (verzija 2024-07-05)."
+    }
+}

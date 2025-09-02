@@ -1,5 +1,11 @@
-<div class="language-switch" [ngClass]="{ 'active-de': isLang('de') }" (click)="toggleLanguage()">
-  <div class="toggle-bg"></div>
-  <div class="lang en" [ngClass]="{ 'active': isLang('en') }">EN</div>
-  <div class="lang de" [ngClass]="{ 'active': isLang('de') }">DE</div>
+<div class="language-switch">
+  <div class="toggle-bg" [ngClass]="{
+      'active-en': isLang('en'),
+      'active-de': isLang('de'),
+      'active-hr': isLang('hr')
+    }"></div>
+
+  <div class="lang en" [ngClass]="{ 'active': isLang('en') }" (click)="setLanguage('en')">EN</div>
+  <div class="lang de" [ngClass]="{ 'active': isLang('de') }" (click)="setLanguage('de')">DE</div>
+  <div class="lang hr" [ngClass]="{ 'active': isLang('hr') }" (click)="setLanguage('hr')">HR</div>
 </div>

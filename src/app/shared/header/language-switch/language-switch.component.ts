@@ -13,11 +13,14 @@ export class LanguageSwitchComponent {
 
   globalData = inject(GlobalDataService);
 
-  toggleLanguage() {
-    this.globalData.switchLanguage();
-  }
-
   isLang(lang: string): boolean {
     return this.globalData.currentLang === lang;
+  }
+
+  currentLang: string = 'en';
+
+  setLanguage(lang: string) {
+    this.currentLang = lang;
+    this.globalData.setLanguage(lang);
   }
 }
