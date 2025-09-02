@@ -48,6 +48,7 @@
   "feedbackMsg": "Vielen Dank! Ihre E-Mail ist bei mir eingegangen.",
   "legalNotice": "Impressum",
   "comingSoon": "In Entwicklung",
+  "myName": "Mihael Drazic",
   "projects": {
     "join": {
       "description": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu."
@@ -129,7 +130,7 @@
     },
     "contact": {
       "title": "Kontakt",
-      "email": "E-Mail: mihaeldraz10@gmail.com",
+      "email": "E-Mail: mail@mihael-drazic.de",
       "phone": "Telefon: +49 162 3275872"
     },
     "website": {

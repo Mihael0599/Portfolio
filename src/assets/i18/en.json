@@ -48,6 +48,7 @@
   "feedbackMsg": "Thank you! Your email has been received.",
   "legalNotice": "Legal Notice",
   "comingSoon": "Coming Soon",
+  "myName": "Mihael Drazic",
   "projects": {
     "join": {
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
@@ -129,7 +130,7 @@
     },
     "contact": {
       "title": "Contact",
-      "email": "Email: mihaeldraz10@gmail.com",
+      "email": "Email: mail@mihael-drazic.de",
       "phone": "Phone: +49 162 3275872"
     },
     "website": {

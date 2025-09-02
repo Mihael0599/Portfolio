@@ -25,7 +25,7 @@
     "featuredProjects": "Moji projekti",
     "featuredProjectsText": "",
     "aboutProject": "Što je ovaj projekt?",
-    "oppinionAboutMe": "Što moji kolege kažu o meni",
+    "oppinionAboutMe": "Što kolege kažu o meni",
     "letsWork": "Započnimo",
     "together": "zajedno.",
     "problemSlove": "Imate problem za riješiti?",
@@ -41,13 +41,14 @@
     "emailError": "Ups! Vaša e-mail adresa je obavezna",
     "messageError": "Što želite razviti?",
     "placeholderName": "Ovdje upišite svoje ime",
-    "placeholderEmail": "vasaemail@email.com",
+    "placeholderEmail": "vasemail@email.com",
     "placeholderMessage": "Bok Mihael, zanima me...",
     "sayHello": "Pozdravite me",
     "nextProject": "Sljedeći projekt",
     "feedbackMsg": "Hvala! Vaša poruka je stigla do mene.",
     "legalNotice": "Impressum",
     "comingSoon": "U izradi",
+    "myName": "Mihael Dražić",
     "projects": {
         "join": {
             "description": "Upravitelj zadataka inspiriran Kanban sustavom. Stvaraj i organiziraj zadatke putem drag-and-drop funkcije, dodjeljuj korisnike i kategorije."
@@ -121,7 +122,7 @@
         "title": "Impressum",
         "responsible": {
             "title": "Odgovorna osoba",
-            "name": "Mihael Drazic, frontend programer"
+            "name": "Mihael Dražić, frontend programer"
         },
         "address": {
             "title": "Adresa",
@@ -129,7 +130,7 @@
         },
         "contact": {
             "title": "Kontakt",
-            "email": "E-mail: mihaeldraz10@gmail.com",
+            "email": "E-mail: mail@mihael-drazic.de",
             "phone": "Telefon: +49 162 3275872"
         },
         "website": {
