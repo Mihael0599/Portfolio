@@ -13,14 +13,15 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 })
 export class ProjectsComponent {
   projects = [
-    /*     {
+/*         {
           projectName: 'Pokedex',
           skills: ['JavaScript', 'CSS', 'HTML'],
           imageURL: 'assets/img/pokedex.png',
           imageModal: 'assets/img/pokedex-modulo.png',
           description: 'projects.pokedex.description',
           githubLink: 'https://github.com/Mihael0599/Pokedex-with-React',
-          liveTestLink: 'https://mihael-drazic.de/Pokedex/'
+          liveTestLink: 'https://mihael-drazic.de/Pokedex/',
+          hasLink: true
         }, */
     {
       projectName: 'Join',
@@ -49,8 +50,8 @@ export class ProjectsComponent {
       imageModal: 'assets/img/dabubble-modal.png',
       description: 'projects.dabubble.description',
       githubLink: 'https://github.com/Mihael0599/DaBubble',
-      hasLink: false,
-      /* liveTestLink: 'https://mihael-drazic.de/ElPolloLoco/', */
+      hasLink: true,
+      liveTestLink: 'https://mihael-drazic.de/dabubble/',
 
     },
   ];
