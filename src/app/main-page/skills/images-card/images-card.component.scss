@@ -13,6 +13,12 @@
     &.hover {
         transform: scale(1.1);
     }
+
+    >img {
+
+        height: 60px;
+        width: 60px;
+    }
 }
 
 .title {

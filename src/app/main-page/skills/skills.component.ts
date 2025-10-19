@@ -21,7 +21,8 @@ export class SkillsComponent {
     {imageSrc: 'assets/img/firebase-icon.png', text: 'Firebase'},
     {imageSrc: 'assets/img/git-icon.png', text: 'Git'},
     {imageSrc: 'assets/img/restapi-icon.png', text: 'Rest-Api'},
-    {imageSrc: 'assets/img/scrum-icon.png', text: 'Scrum'}
+    {imageSrc: 'assets/img/scrum-icon.png', text: 'Scrum'},
+    {imageSrc: 'assets/img/n8n.png', text: 'n8n'}
   ];
 
   hoveredSkill: any = null;
