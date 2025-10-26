@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './carousel.component.scss'
 })
 export class CarouselComponent implements AfterViewInit {
-  currentIndex = 1;
+  currentIndex = 2;
 
   testimonials = [
     {
@@ -27,6 +27,16 @@ export class CarouselComponent implements AfterViewInit {
       author: "M. Schweiger",
       role: "Team Partner",
       quote: "testimonials.3.quote"
+    },
+    {
+      author: "Prathab",
+      role: "Team Partner",
+      quote: "testimonials.4.quote"
+    },
+    {
+      author: "R. Runge",
+      role: "Team Partner",
+      quote: "testimonials.5.quote"
     },
   ];
 
